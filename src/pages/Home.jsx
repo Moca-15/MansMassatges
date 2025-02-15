@@ -1,16 +1,20 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { About } from '../components/index.js'
+import { About } from '../components/index.js';
+
+import { HomeBackground } from '../assets/index.js';
+
 
 
 export default function Home() {
   const { t } = useTranslation();
+  // const bgPath = '/src/assets/def_bg.png';
 
   return (
     <section className="bg-gray-100 text-gray-800">
       {/* Secció Hero */}
       <div className="relative bg-cover bg-center h-screen flex items-center justify-center text-center" 
-           style={{ backgroundImage: "url('/src/assets/def_bg.png')" }}>
+           style={{ backgroundImage: `url(${HomeBackground})` }}>
  
         <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* això per enfosquir el background un pèl*/}
 
@@ -31,10 +35,10 @@ export default function Home() {
             </button>
             <button
               className="px-6 py-3 text-blue-600 bg-white border border-blue-600 hover:bg-gray-100 rounded-md transition"
-              onClick={() => alert(t('homepage.hero.ctaRequestDemo'))}
+              onClick={() => alert(t('hero.ctaRequestDemo'))}
             >
               {t('hero.ctaRequestDemo')}
-            </button>
+            </  button>
           </div>
         </div>
       </div>

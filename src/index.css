@@ -19,7 +19,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: inherit;
   text-decoration: inherit;
 }
 a:hover {
@@ -71,4 +71,25 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+.socialmedia {
+  display: flex;           /* Arrange items in a row */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Align items in the middle */
+  gap: 15px;               /* Add space between icons */
+  margin-top: 20px;        /* Optional: Add space from the top */
+}
+
+.socialmedia a {
+  text-decoration: none; /* Remove link underline */
+}
+
+.socialmedia img {
+  transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.socialmedia img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
