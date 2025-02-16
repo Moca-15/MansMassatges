@@ -74,22 +74,72 @@ button:focus-visible {
 }
 
 
-.socialmedia {
+.linked-image {
   display: flex;           /* Arrange items in a row */
   justify-content: center; /* Center horizontally */
   align-items: center;     /* Align items in the middle */
   gap: 15px;               /* Add space between icons */
-  margin-top: 20px;        /* Optional: Add space from the top */
+  /* margin-top: 20px;        Optional: Add space from the top */
 }
 
-.socialmedia a {
+.linked-image a {
   text-decoration: none; /* Remove link underline */
 }
 
-.socialmedia img {
+.linked-image img {
   transition: transform 0.2s; /* Smooth hover effect */
 }
 
-.socialmedia img:hover {
+.linked-image img:hover {
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
+
+/* flex items-center justify-between p-8 bg-gradient-to-b from-black via-black/60 to-transparent text-white */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+}
+
+
+.nav-link {
+  font-size: 1.125rem; /* equivalent to text-lg */
+  /* font-size: 1rem; */
+  transition-duration: 150ms;
+  transition-property: all;
+  position: relative;
+}
+
+/* 
+rgb(156 163 175) = gray-400
+rgb(107 114 128) = gray-500
+rgb(75 85 99) = gray-600
+rgb(55 65 81) = gray-700
+rgb(31 41 55) = gray-800 
+*/
+.nav-link:hover {
+  color: rgb(107 114 128); 
+  font-weight:900;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.nav-links-container {
+  display: flex;
+  gap: 40px;
+}
+
+.right-container {
+  display: flex;
+  width: 300px;
+  justify-content: right;
+} 
+
+.left-container {
+  display: flex;
+  width: 300px;
+  justify-content: left;
+} 

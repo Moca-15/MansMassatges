@@ -12,7 +12,7 @@ export default function Footer() {
         <a href="/contact">{t('footer.contact')}</a>
       </div>
       <p className="mt-4"> {t('footer.rights')}</p>
-      <div class="socialmedia">
+      <div class="linked-image">
           <a class="Facebook" href="https://www.facebook.com/" target="_blank">
               <img src="https://images.seeklogo.com/logo-png/27/1/facebook-logo-png_seeklogo-273078.png?v=1957936080409174768" width="50px" height="50px" />
           </a>
