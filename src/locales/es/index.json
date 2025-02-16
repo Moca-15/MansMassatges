@@ -1,17 +1,16 @@
 {
-    "homepage": {
-      "header": {
-        "tagline": "Revolucionando la Seguridad y el Rendimiento a través de la Inteligencia Artificial.",
-        "about": "Sobre nosotros",
-        "solutions": "Soluciones",
-        "contact": "Contacto"
-      },
-      "hero": {
-        "headline": "Inteligencia Artificial para Imágenes y Vídeos.",
-        "subheadline": "Descubre el poder del análisis avanzado de imágenes y vídeos para mejorar la seguridad y alcanzar un rendimiento excepcional",
-        "ctaLearnMore": "Saber más",
-        "ctaRequestDemo": "Solicitar una Demo"
-      }
+    "header": {
+      "title": "Fregata Space",
+      "tagline": "Revolucionando la Seguridad y el Rendimiento a través de la Inteligencia Artificial.",
+      "about": "Sobre nosotros",
+      "solutions": "Soluciones",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "headline": "Inteligencia Artificial para Imágenes y Vídeos.",
+      "subheadline": "Descubre el poder del análisis avanzado de imágenes y vídeos para mejorar la seguridad y alcanzar un rendimiento excepcional",
+      "ctaLearnMore": "Saber más",
+      "ctaRequestDemo": "Solicitar una Demo"
     },
     "about": {
       "headline": "Quiénes Somos",
@@ -22,46 +21,46 @@
       "security": {
         "title": "Análisis de Seguridad",
         "description": "Detecta y responde a amenazas en tiempo real con nuestras soluciones avanzadas de vigilancia por vídeo. Desde reconocimiento facial hasta detección de anomalías, nuestra tecnología protege tus activos y personal.",
-        "features": {
-            "1": "Detección en tiempo real de objetos e intrusiones.", 
-            "2": "Análisis de comportamiento para identificar actividades sospechosas.",
-            "3": "Integración con sistemas de seguridad existentes."
-        }
+        "features": [
+            "Detección en tiempo real de objetos e intrusiones.", 
+            "Análisis de comportamiento para identificar actividades sospechosas.",
+            "Integración con sistemas de seguridad existentes."
+        ]
       },
       "performance": {
         "title": "Análisis de Rendimiento",
         "description": "Optimiza tus operaciones y toma decisiones informadas a través de procesamiento avanzado de imágenes y videos. Nuestras soluciones están diseñadas para industrias que requieren precisión y velocidad.",
-        "features": {
-            "1": "Monitoreo de tráfico y análisis de vehículos.",
-            "2": "Análisis de densidad de multitudes.",
-            "3": "Control de calidad en manufactura utilizando IA visual."
-        }
+        "features": [
+            "Monitoreo de tráfico y análisis de vehículos.",
+            "Análisis de densidad de multitudes.",
+            "Control de calidad en manufactura utilizando IA visual."
+        ]
       },
       "ai": {
         "title": "Modelos de IA Personalizados",
         "description": "Cada desafío es único, por eso nuestras soluciones también lo son. Diseñamos modelos de IA personalizados según tus necesidades específicas.",
-        "features": {
-            "1": "Diseño y despliegue de modelos de principio a fin.",
-            "2": "Experiencia en visión por computadora y aprendizaje automático.",
-            "3": "Soluciones escalables para empresas de todos los tamaños."
-        }
+        "features": [
+            "Diseño y despliegue de modelos de principio a fin.",
+            "Experiencia en visión por computadora y aprendizaje automático.",
+            "Soluciones escalables para empresas de todos los tamaños."
+        ]
       }
     },
     "process": {
       "headline": "Nuestro Proceso",
       "stepsIdx": [
-        "1. Descubrimiento: ",
-        "2. Recolección de Datos: ",
-        "3. Desarrollo del Modelo: ",
-        "4. Implementación: ",
-        "5. Soporte: "
+        "Descubrimiento: ",
+        "Recolección de Datos: ",
+        "Desarrollo del Modelo: ",
+        "Implementación: ",
+        "Soporte: "
       ],
       "steps": [
         "Trabajamos contigo para entender tus necesidades específicas.",
         "Aprovechamos tus datos existentes o te ayudamos a crear conjuntos de datos para entrenar.",
         "Diseñamos y entrenamos modelos de IA personalizados para tu aplicación.",
         "Integramos nuestras soluciones de manera sencilla en tu infraestructura.",
-        " Supervisión, optimización y actualizaciones continuas."
+        "Supervisión, optimización y actualizaciones continuas."
       ]
     },
     "features": {
@@ -82,10 +81,10 @@
     "industries": {
       "headline": "Industrias que Atendemos",
       "listIdx" : [
-        "Ciudades Inteligentes: ",
-        "Manufactura: ",
-        "Venta al Detalle: ",
-        "Aeroespacio y Defensa: "
+        "Ciudades Inteligentes",
+        "Manufactura",
+        "Venta al Detalle",
+        "Aeroespacio y Defensa"
       ],
       "list": [
         "Gestión del tráfico, seguridad pública y análisis de multitudes.",
