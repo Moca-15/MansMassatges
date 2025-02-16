@@ -1,12 +1,4 @@
 # Prototype for fregata space website
-
-- 12-1-25 : Create translation jsons
-- 13-1-25 : Compiles, no info display
-- 16-1-24 : Add various modules (components)
-- 19-1-24 : Add main page & Info page
-- 20-1-24 : Automatic language detection
-- 22-1-24 : Aesthetic fixes
-
 [From https://nodejs.org]
 
 To run a React and Tailwind CSS project downloaded from GitHub on your Mac or Linuxnpm start
