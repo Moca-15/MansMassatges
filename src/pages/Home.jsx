@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { About } from '../components/index.js';
 
@@ -8,16 +8,31 @@ import { HomeBackground } from '../assets/index.js';
 
 export default function Home() {
   const { t } = useTranslation();
-  // const bgPath = '/src/assets/def_bg.png';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      document.documentElement.style.setProperty('--scroll', window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <section className="bg-gray-100 text-gray-800">
-      {/* Secció Hero */}
-      <div className="relative bg-cover bg-center h-screen flex items-center justify-center text-center" 
-           style={{ backgroundImage: `url(${HomeBackground})` }}>
- 
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* això per enfosquir el background un pèl*/}
+    <section className="relative min-h-screen text-gray-800">
+      {/* background Added parallax effect */}
+      <div 
+        className="fixed inset-0 bg-cover bg-center -z-10 bg-fixed"
+        style={{ 
+          backgroundImage: `url(${HomeBackground})`,
+          // scroll -0.5px perquè el fons baixi en scroll però amb delay
+          transform: 'translateY(calc(var(--scroll) * (-0.15px)))',
+        }}
+      ></div>
+      <div className="fixed inset-0 bg-black bg-opacity-50 -z-10"></div>
 
+      {/* Secció Hero */}
+      <div className="relative min-h-screen flex items-center justify-center text-center">
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-4xl font-extrabold text-white sm:text-6xl">
             {t('hero.headline')} 
