@@ -1,10 +1,10 @@
 {
     "header": {
-      "title": "Fregata Space",
-      "tagline": "Revolucionando la Seguridad y el Rendimiento a través de la Inteligencia Artificial.",
-      "about": "Sobre nosotros",
-      "solutions": "Soluciones",
-      "contact": "Contacto"
+      "home": "Fregata Space",
+      "about": "Sobre Nosotros",
+      "products": "Productos",
+      "pricing": "Tarifas",
+      "getStarted": "Comenzar"
     },
     "hero": {
       "headline": "Inteligencia Artificial para Imágenes y Vídeos.",

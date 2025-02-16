@@ -1,10 +1,10 @@
 {
     "header": {
-      "title": "Fregata Space",
-      "tagline": "Revolutionizing Security and Performance Through AI-Powered Vision.",
-      "about": "About us",
-      "solutions": "Solutions",
-      "contact": "Contact"
+      "home": "Fregata Space",
+      "about": "What We Do",
+      "products": "Products",
+      "pricing": "Pricing",
+      "getStarted": "Get Started"
     },
     "hero": {
       "headline": "AI-Driven Insights From Images and Videos",

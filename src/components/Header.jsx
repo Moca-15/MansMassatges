@@ -18,8 +18,9 @@ export default function Header() {
       <nav className="flex flex-1 justify-center">
         <div className="nav-links-container">
           <a href="/information" className="nav-link">{t('header.about')}</a>
-          <a href="/solutions" className="nav-link">{t('header.solutions')}</a>
-          <a href="/contact" className="nav-link">{t('header.contact')}</a>
+          <a href="/products" className="nav-link">{t('header.products')}</a>
+          <a href="/pricing" className="nav-link">{t('header.pricing')}</a>
+          <a href="/getStarted" className="nav-link">{t('header.getStarted')}</a>
         </div>
       </nav>
       {/* dreta */}
