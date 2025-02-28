@@ -11,7 +11,7 @@ export default function Products() {
       {/* video background */}
       <div className="background">
         <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
-          <source src="/road.mp4" type="video/mp4" />
+          <source src="./road.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="background bg-gradient-to-r from-black via-black/60 to-transparent"></div>
