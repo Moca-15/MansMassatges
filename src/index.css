@@ -52,7 +52,11 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: rgb(156 163 175);
+  background-color: rgb(156 163 175);
+  scale: 1.025;
+  transition: transform 0.1s; /* Smooth hover effect */
+  
 }
 
 button:focus,
@@ -72,6 +76,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.background {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
+  background-attachment: fixed;
+  /* scroll -0.5px perquè el fons baixi en scroll però amb delay */
+  transform: translateY(calc(var(--scroll) * (-0.15px)));
+}
+
 
 
 .linked-image {
@@ -94,7 +111,6 @@ button:focus-visible {
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
-/* flex items-center justify-between p-8 bg-gradient-to-b from-black via-black/60 to-transparent text-white */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -103,7 +119,6 @@ button:focus-visible {
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.6), transparent);
   color: white;
 }
-
 
 .nav-link {
   font-size: 1.125rem; /* equivalent to text-lg */
@@ -143,3 +158,34 @@ rgb(31 41 55) = gray-800
   width: 300px;
   justify-content: left;
 } 
+
+
+
+.icon-bubble {
+  width: 6rem;          /* w-24 (24 * 0.25rem = 6rem) */
+  height: 6rem;         /* h-24 */
+  border-radius: 9999px; /* rounded-full */
+  position: relative;    /* relative */
+  overflow: hidden;      /* overflow-hidden */
+  transition: all 0.3s;  /* transition-all duration-300 */
+}
+
+.icon-bubble:hover {
+  transform: scale(1.05); /* hover:scale-105 */
+}
+
+.icon-bubble.active {
+  transform: scale(1.1);  /* scale-110 when active */
+  border: 2px solid green;
+}
+
+
+.bubble-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  /* background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.6), transparent); */
+  color: transparent;
+}

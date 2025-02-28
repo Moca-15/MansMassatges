@@ -1,128 +1,154 @@
 {
-    "header": {
-      "home": "Fregata Space",
-      "about": "What We Do",
-      "products": "Products",
-      "pricing": "Pricing",
-      "getStarted": "Get Started"
+  "header": {
+    "home": "Fregata Space",
+    "about": "What We Do",
+    "products": "Products",
+    "pricing": "Pricing",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "headline": "AI-Driven Insights From Images and Videos",
+    "subheadline": "Unlock the potential of advanced image and video analytics for enhanced security and unparalleled performance.",
+    "ctaLearnMore": "Learn More",
+    "ctaRequestDemo": "Request a Demo"
+  },
+
+  "products": {
+    "slogan": "Smart Vision, Smarter Decisions",
+    "subtitle": "Top notch image and video analysis tools within your reach",
+    "camera1" : {
+      "title" : "People and pet monitoring",
+      "description" : "aaa1"
+
     },
-    "hero": {
-      "headline": "AI-Driven Insights From Images and Videos",
-      "subheadline": "Unlock the potential of advanced image and video analytics for enhanced security and unparalleled performance.",
-      "ctaLearnMore": "Learn More",
-      "ctaRequestDemo": "Request a Demo"
+    "camera2" : {
+      "title" : "Security",
+      "description" : "aaa2"
+
     },
-    "about": {
-      "headline": "Who We Are",
-      "content": "Fregata Space is at the forefront of AI-powered image and video analytics, dedicated to delivering cutting-edge solutions for security, monitoring, and high-performance applications. Our mission is to harness the power of artificial intelligence to transform data into actionable insights, empowering businesses and organizations worldwide."
+    "camera3" : {
+      "title" : "Car detection",
+      "description" : "aaa3"
     },
-    "solutions": {
-      "headline": "What We Offer",
-      "security": {
-        "title": "Security Analytics",
-        "description": "Detect and respond to threats in real-time with our state-of-the-art video surveillance solutions. From facial recognition to anomaly detection, our technology ensures your assets and personnel are safeguarded.",
-        "features": [
-            "Real-time object and intrusion detection.", 
-            "Behavior analysis for identifying suspicious activities.",
-            "Integration with existing security systems."
-        ]
-      },
-      "performance": {
-        "title": "Performance Analytics",
-        "description": "Optimize operations and decision-making through advanced video and image processing. Our AI solutions are tailored for industries demanding precision and speed.",
-        "features": [
-            "Traffic monitoring and vehicle analytics.",
-            "Crowd density analysis",
-            "Quality assurance in manufacturing using visual AI."
-        ]
-      },
-      "ai": {
-        "title": "Custom AI Models",
-        "description": "Every problem is unique, and so are our solutions. We develop custom AI models tailored to your specific needs.",
-        "features": [
-            "End-to-end model design and deployment.",
-            "Expertise in computer vision and machine learning.",
-            "Scalable solutions for businesses of all sizes."
-        ]
-      }
-    },
-    "process": {
-      "headline": "Our Process",
-      "stepsIdx": [
-        "Discovery",
-        "Data Collection",
-        "Model Development",
-        "Deployment",
-        "Support"
-      ],
-      "steps": [
-        "We work with you to understand your specific requirements.",
-        "Leverage your existing data or curate datasets for training.",
-        "We design and train custom AI models for your application.",
-        "Seamlessly integrate solutions into your infrastructure.",
-        "Provide ongoing monitoring, optimization, and updates."
+    "learnMore" : "Learn More"
+  },
+
+
+
+
+
+
+  "about": {
+    "headline": "Who We Are",
+    "content": "Fregata Space is at the forefront of AI-powered image and video analytics, dedicated to delivering cutting-edge solutions for security, monitoring, and high-performance applications. Our mission is to harness the power of artificial intelligence to transform data into actionable insights, empowering businesses and organizations worldwide."
+  },
+  "solutions": {
+    "headline": "What We Offer",
+    "security": {
+      "title": "Security Analytics",
+      "description": "Detect and respond to threats in real-time with our state-of-the-art video surveillance solutions. From facial recognition to anomaly detection, our technology ensures your assets and personnel are safeguarded.",
+      "features": [
+          "Real-time object and intrusion detection.", 
+          "Behavior analysis for identifying suspicious activities.",
+          "Integration with existing security systems."
       ]
     },
-    "features": {
-      "headline": "What Makes Us Different",
-      "listIdx": [
-        "Accuracy. ",
-        "Speed. ",
-        "Sacalability. ",
-        "Expertise. "
-      ],
-      "list": [
-        "Industry-leading models for precise and reliable results.",
-        "Real-time analytics for faster decision-making.",
-        "Solutions built to grow with your business.",
-        "A team of AI experts dedicated to your success."
+    "performance": {
+      "title": "Performance Analytics",
+      "description": "Optimize operations and decision-making through advanced video and image processing. Our AI solutions are tailored for industries demanding precision and speed.",
+      "features": [
+          "Traffic monitoring and vehicle analytics.",
+          "Crowd density analysis",
+          "Quality assurance in manufacturing using visual AI."
       ]
     },
-    "industries": {
-      "headline": "Industries We Serve",
-      "listIdx" : [
-        "Smart Cities",
-        "Manufacturing",
-        "Retail",
-        "Aerospace & Defense"
-      ],
-      "list": [
-        "Traffic management, public safety, and crowd analytics.",
-        "Quality assurance and process monitoring.",
-        "Customer behavior analysis and theft detection.",
-        "High-precision monitoring for mission-critical applications."
+    "ai": {
+      "title": "Custom AI Models",
+      "description": "Every problem is unique, and so are our solutions. We develop custom AI models tailored to your specific needs.",
+      "features": [
+          "End-to-end model design and deployment.",
+          "Expertise in computer vision and machine learning.",
+          "Scalable solutions for businesses of all sizes."
       ]
-    },
-    "testimonials": {
-      "headline": "What Our Clients Say",
-      "list": [
-        {
-          "quote": "Fregata Space transformed our security system with its AI-powered surveillance tools. The accuracy and speed are unmatched!",
-          "author": "Jane D., Security Manager"
-        },
-        {
-          "quote": "Their custom solutions helped us reduce defects in our manufacturing line by 30%. Highly recommended!",
-          "author": "Mark T., Operations Head"
-        }
-      ]
-    },
-    "contact": {
-      "headline": "Get in Touch",
-      "description": " Ready to take your analytics to the next level? Contact us to discuss your project or request a demo.",
-      "name": "Name",
-      "email": "Email",
-      "company": "Company",
-      "message": "Message",
-      "submit": "Submit"
-    },
-    "footer": {
-      "about": "About",
-      "solutions": "Solutions",
-      "blog": "Blog",
-      "careers": "Careers",
-      "policy": "Privacy Policy",
-      "contact": "Contact",
-      "media": [],
-      "rights": "Copyright: © 2025 Fregata Space. All rights reserved."
     }
+  },
+  "process": {
+    "headline": "Our Process",
+    "stepsIdx": [
+      "Discovery",
+      "Data Collection",
+      "Model Development",
+      "Deployment",
+      "Support"
+    ],
+    "steps": [
+      "We work with you to understand your specific requirements.",
+      "Leverage your existing data or curate datasets for training.",
+      "We design and train custom AI models for your application.",
+      "Seamlessly integrate solutions into your infrastructure.",
+      "Provide ongoing monitoring, optimization, and updates."
+    ]
+  },
+  "features": {
+    "headline": "What Makes Us Different",
+    "listIdx": [
+      "Accuracy. ",
+      "Speed. ",
+      "Sacalability. ",
+      "Expertise. "
+    ],
+    "list": [
+      "Industry-leading models for precise and reliable results.",
+      "Real-time analytics for faster decision-making.",
+      "Solutions built to grow with your business.",
+      "A team of AI experts dedicated to your success."
+    ]
+  },
+  "industries": {
+    "headline": "Industries We Serve",
+    "listIdx" : [
+      "Smart Cities",
+      "Manufacturing",
+      "Retail",
+      "Aerospace & Defense"
+    ],
+    "list": [
+      "Traffic management, public safety, and crowd analytics.",
+      "Quality assurance and process monitoring.",
+      "Customer behavior analysis and theft detection.",
+      "High-precision monitoring for mission-critical applications."
+    ]
+  },
+  "testimonials": {
+    "headline": "What Our Clients Say",
+    "list": [
+      {
+        "quote": "Fregata Space transformed our security system with its AI-powered surveillance tools. The accuracy and speed are unmatched!",
+        "author": "Jane D., Security Manager"
+      },
+      {
+        "quote": "Their custom solutions helped us reduce defects in our manufacturing line by 30%. Highly recommended!",
+        "author": "Mark T., Operations Head"
+      }
+    ]
+  },
+  "contact": {
+    "headline": "Get in Touch",
+    "description": " Ready to take your analytics to the next level? Contact us to discuss your project or request a demo.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "footer": {
+    "about": "About",
+    "solutions": "Solutions",
+    "blog": "Blog",
+    "careers": "Careers",
+    "policy": "Privacy Policy",
+    "contact": "Contact",
+    "media": [],
+    "rights": "Copyright: © 2025 Fregata Space. All rights reserved."
   }
+}

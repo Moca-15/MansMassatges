@@ -1,128 +1,128 @@
 {
-    "header": {
-      "home": "Fregata Space",
-      "about": "Sobre Nosotros",
-      "products": "Productos",
-      "pricing": "Tarifas",
-      "getStarted": "Comenzar"
-    },
-    "hero": {
-      "headline": "Inteligencia Artificial para Imágenes y Vídeos.",
-      "subheadline": "Descubre el poder del análisis avanzado de imágenes y vídeos para mejorar la seguridad y alcanzar un rendimiento excepcional",
-      "ctaLearnMore": "Saber más",
-      "ctaRequestDemo": "Solicitar una Demo"
-    },
-    "about": {
-      "headline": "Quiénes Somos",
-      "content": "En Fregata Space, lideramos el desarrollo de soluciones de análisis de imágenes y videos basadas en inteligencia artificial, diseñadas para garantizar seguridad y optimizar el rendimiento. Nuestra misión es transformar datos visuales en información útil y práctica, impulsando a empresas y organizaciones en todo el mundo."
-    },
-    "solutions": {
-      "headline": "Qué Ofrecemos",
-      "security": {
-        "title": "Análisis de Seguridad",
-        "description": "Detecta y responde a amenazas en tiempo real con nuestras soluciones avanzadas de vigilancia por vídeo. Desde reconocimiento facial hasta detección de anomalías, nuestra tecnología protege tus activos y personal.",
-        "features": [
-            "Detección en tiempo real de objetos e intrusiones.", 
-            "Análisis de comportamiento para identificar actividades sospechosas.",
-            "Integración con sistemas de seguridad existentes."
-        ]
-      },
-      "performance": {
-        "title": "Análisis de Rendimiento",
-        "description": "Optimiza tus operaciones y toma decisiones informadas a través de procesamiento avanzado de imágenes y videos. Nuestras soluciones están diseñadas para industrias que requieren precisión y velocidad.",
-        "features": [
-            "Monitoreo de tráfico y análisis de vehículos.",
-            "Análisis de densidad de multitudes.",
-            "Control de calidad en manufactura utilizando IA visual."
-        ]
-      },
-      "ai": {
-        "title": "Modelos de IA Personalizados",
-        "description": "Cada desafío es único, por eso nuestras soluciones también lo son. Diseñamos modelos de IA personalizados según tus necesidades específicas.",
-        "features": [
-            "Diseño y despliegue de modelos de principio a fin.",
-            "Experiencia en visión por computadora y aprendizaje automático.",
-            "Soluciones escalables para empresas de todos los tamaños."
-        ]
-      }
-    },
-    "process": {
-      "headline": "Nuestro Proceso",
-      "stepsIdx": [
-        "Descubrimiento: ",
-        "Recolección de Datos: ",
-        "Desarrollo del Modelo: ",
-        "Implementación: ",
-        "Soporte: "
-      ],
-      "steps": [
-        "Trabajamos contigo para entender tus necesidades específicas.",
-        "Aprovechamos tus datos existentes o te ayudamos a crear conjuntos de datos para entrenar.",
-        "Diseñamos y entrenamos modelos de IA personalizados para tu aplicación.",
-        "Integramos nuestras soluciones de manera sencilla en tu infraestructura.",
-        "Supervisión, optimización y actualizaciones continuas."
+  "header": {
+    "home": "Fregata Space",
+    "about": "Sobre Nosotros",
+    "products": "Productos",
+    "pricing": "Tarifas",
+    "getStarted": "Comenzar"
+  },
+  "hero": {
+    "headline": "Inteligencia Artificial para Imágenes y Vídeos.",
+    "subheadline": "Descubre el poder del análisis avanzado de imágenes y vídeos para mejorar la seguridad y alcanzar un rendimiento excepcional",
+    "ctaLearnMore": "Saber más",
+    "ctaRequestDemo": "Solicitar una Demo"
+  },
+  "about": {
+    "headline": "Quiénes Somos",
+    "content": "En Fregata Space, lideramos el desarrollo de soluciones de análisis de imágenes y videos basadas en inteligencia artificial, diseñadas para garantizar seguridad y optimizar el rendimiento. Nuestra misión es transformar datos visuales en información útil y práctica, impulsando a empresas y organizaciones en todo el mundo."
+  },
+  "solutions": {
+    "headline": "Qué Ofrecemos",
+    "security": {
+      "title": "Análisis de Seguridad",
+      "description": "Detecta y responde a amenazas en tiempo real con nuestras soluciones avanzadas de vigilancia por vídeo. Desde reconocimiento facial hasta detección de anomalías, nuestra tecnología protege tus activos y personal.",
+      "features": [
+          "Detección en tiempo real de objetos e intrusiones.", 
+          "Análisis de comportamiento para identificar actividades sospechosas.",
+          "Integración con sistemas de seguridad existentes."
       ]
     },
-    "features": {
-      "headline": "Qué Nos Hace Diferentes",
-      "listIdx": [
-        "Precisión. ",
-        "Velocidad. ",
-        "Escalabilidad. ",
-        "Experiencia. "
-      ],
-      "list": [
-        "Modelos líderes en la industria para resultados confiables.",
-        "Análisis en tiempo real para decisiones más rápidas.",
-        "Soluciones diseñadas para crecer con tu negocio.",
-        "Un equipo de especialistas en IA comprometido con tu éxito."
+    "performance": {
+      "title": "Análisis de Rendimiento",
+      "description": "Optimiza tus operaciones y toma decisiones informadas a través de procesamiento avanzado de imágenes y videos. Nuestras soluciones están diseñadas para industrias que requieren precisión y velocidad.",
+      "features": [
+          "Monitoreo de tráfico y análisis de vehículos.",
+          "Análisis de densidad de multitudes.",
+          "Control de calidad en manufactura utilizando IA visual."
       ]
     },
-    "industries": {
-      "headline": "Industrias que Atendemos",
-      "listIdx" : [
-        "Ciudades Inteligentes",
-        "Manufactura",
-        "Venta al Detalle",
-        "Aeroespacio y Defensa"
-      ],
-      "list": [
-        "Gestión del tráfico, seguridad pública y análisis de multitudes.",
-        "Garantía de calidad y monitoreo de procesos.",
-        "Análisis del comportamiento del cliente y detección de robos.",
-        "Monitoreo de alta precisión para aplicaciones críticas."
+    "ai": {
+      "title": "Modelos de IA Personalizados",
+      "description": "Cada desafío es único, por eso nuestras soluciones también lo son. Diseñamos modelos de IA personalizados según tus necesidades específicas.",
+      "features": [
+          "Diseño y despliegue de modelos de principio a fin.",
+          "Experiencia en visión por computadora y aprendizaje automático.",
+          "Soluciones escalables para empresas de todos los tamaños."
       ]
-    },
-    "testimonials": {
-      "headline": "Qué Dicen Nuestros Clientes",
-      "list": [
-        {
-          "quote": "Fregata Space transformó nuestro sistema de seguridad con sus herramientas de vigilancia impulsadas por IA. ¡La precisión y rapidez son insuperables!",
-          "author": "Jane D., Gerente de Seguridad"
-        },
-        {
-          "quote": "Sus soluciones personalizadas nos ayudaron a reducir defectos en nuestra línea de producción en un 30%. ¡Altamente recomendable!",
-          "author": "Mark T., Jefe de Operaciones"
-        }
-      ]
-    },
-    "contact": {
-      "headline": "Contáctanos",
-      "description": "¿Listo para llevar tu análisis al siguiente nivel? Contáctanos para discutir tu proyecto o solicitar una demo.",
-      "name": "Nombre",
-      "email": "Email",
-      "company": "Empresa",
-      "message": "Mensaje",
-      "submit": "Enviar"
-    },
-    "footer": {
-      "about": "Sobre Nosotros",
-      "solutions": "Soluciones",
-      "blog": "Blog",
-      "careers": "Carreras",
-      "policy": "Política de Privacidad",
-      "contact": "Contacto",
-      "media": [],
-      "rights": "Copyright: © 2025 Fregata Space. All rights reserved."
     }
+  },
+  "process": {
+    "headline": "Nuestro Proceso",
+    "stepsIdx": [
+      "Descubrimiento: ",
+      "Recolección de Datos: ",
+      "Desarrollo del Modelo: ",
+      "Implementación: ",
+      "Soporte: "
+    ],
+    "steps": [
+      "Trabajamos contigo para entender tus necesidades específicas.",
+      "Aprovechamos tus datos existentes o te ayudamos a crear conjuntos de datos para entrenar.",
+      "Diseñamos y entrenamos modelos de IA personalizados para tu aplicación.",
+      "Integramos nuestras soluciones de manera sencilla en tu infraestructura.",
+      "Supervisión, optimización y actualizaciones continuas."
+    ]
+  },
+  "features": {
+    "headline": "Qué Nos Hace Diferentes",
+    "listIdx": [
+      "Precisión. ",
+      "Velocidad. ",
+      "Escalabilidad. ",
+      "Experiencia. "
+    ],
+    "list": [
+      "Modelos líderes en la industria para resultados confiables.",
+      "Análisis en tiempo real para decisiones más rápidas.",
+      "Soluciones diseñadas para crecer con tu negocio.",
+      "Un equipo de especialistas en IA comprometido con tu éxito."
+    ]
+  },
+  "industries": {
+    "headline": "Industrias que Atendemos",
+    "listIdx" : [
+      "Ciudades Inteligentes",
+      "Manufactura",
+      "Venta al Detalle",
+      "Aeroespacio y Defensa"
+    ],
+    "list": [
+      "Gestión del tráfico, seguridad pública y análisis de multitudes.",
+      "Garantía de calidad y monitoreo de procesos.",
+      "Análisis del comportamiento del cliente y detección de robos.",
+      "Monitoreo de alta precisión para aplicaciones críticas."
+    ]
+  },
+  "testimonials": {
+    "headline": "Qué Dicen Nuestros Clientes",
+    "list": [
+      {
+        "quote": "Fregata Space transformó nuestro sistema de seguridad con sus herramientas de vigilancia impulsadas por IA. ¡La precisión y rapidez son insuperables!",
+        "author": "Jane D., Gerente de Seguridad"
+      },
+      {
+        "quote": "Sus soluciones personalizadas nos ayudaron a reducir defectos en nuestra línea de producción en un 30%. ¡Altamente recomendable!",
+        "author": "Mark T., Jefe de Operaciones"
+      }
+    ]
+  },
+  "contact": {
+    "headline": "Contáctanos",
+    "description": "¿Listo para llevar tu análisis al siguiente nivel? Contáctanos para discutir tu proyecto o solicitar una demo.",
+    "name": "Nombre",
+    "email": "Email",
+    "company": "Empresa",
+    "message": "Mensaje",
+    "submit": "Enviar"
+  },
+  "footer": {
+    "about": "Sobre Nosotros",
+    "solutions": "Soluciones",
+    "blog": "Blog",
+    "careers": "Carreras",
+    "policy": "Política de Privacidad",
+    "contact": "Contacto",
+    "media": [],
+    "rights": "Copyright: © 2025 Fregata Space. All rights reserved."
   }
+}
