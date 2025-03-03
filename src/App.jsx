@@ -8,7 +8,7 @@ import './i18n'; // Comprovar que la conf està inicialitzada!!!
 
 
 // Importar pags
-import { Home, Information, Products, Pricing, GetStarted }  from './pages/index.js'
+import { Home, Information, Products, Pricing, GetStarted, Checkout }  from './pages/index.js'
 
 // Importar components
 import { Header, Footer } from './components/index.js'
@@ -32,6 +32,7 @@ function App() {
             <Route path="/products" element={<Products />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/getStarted" element={<GetStarted />} />
+            <Route path="/checkout" element={<Checkout />} />
 
           </Routes>
         </main>
