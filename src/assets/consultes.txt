@@ -1,0 +1,3 @@
+[checkout.jsx] Que l'usuari pugui seleccionar com es tracta la URL per la preview (.jpg/.png, .mjpg, .m3u8) o que es trii dinàmicament parsejant la url? o sempre són de 1 tipus?
+
+
