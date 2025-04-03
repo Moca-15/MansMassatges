@@ -1,7 +1,8 @@
 
-export { default as HomeBackground } from './def_bg.png'
-export { default as logo } from './default.png'
-export { default as NameLogo } from './def_logo.webp'
+export { default as HomeBackground } from './satellite-693280_1920.jpg'
+export { default as NameLogo } from './font_logo.png'
+export { default as IconLogo } from './logo_no_bg.png'
+
 
 
 // import img1 from './img1.png'

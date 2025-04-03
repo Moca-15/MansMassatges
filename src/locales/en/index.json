@@ -6,6 +6,26 @@
     "pricing": "Pricing",
     "getStarted": "Get Started"
   },
+
+  "footer": {
+    "rights": "Copyright: © 2025 Fregata Space. All rights reserved.",
+
+    "company": "Company",
+    "policies": "Policies",
+    "terms": "Terms and Conditions",
+
+    "features": "Features",
+    "ai": "AI Cameras",
+    "pricing": "Pricing",
+    "examples": "Real-Life Examples",
+
+    "support": "Support",
+    "contact": "Contact",
+    "guide": "User Guide"
+
+  },
+
+
   "hero": {
     "headline": "AI-Driven Insights From Images and Videos",
     "subheadline": "Unlock the potential of advanced image and video analytics for enhanced security and unparalleled performance.",
@@ -18,25 +38,25 @@
     "subtitle": "Top notch image and video analysis tools within your reach",
     "camera1" : {
       "title" : "People and pet monitoring",
-      "description" : "aaa1"
+      "description" : "description here ",
+      "price" : "0000"
 
     },
     "camera2" : {
       "title" : "Security",
-      "description" : "aaa2"
+      "description" : "description here ",
+      "price" : "0000"
+
 
     },
     "camera3" : {
       "title" : "Car detection",
-      "description" : "aaa3"
+      "description" : "description here ",
+      "price" : "0000"
+
     },
     "learnMore" : "Learn More"
   },
-
-
-
-
-
 
   "about": {
     "headline": "Who We Are",
@@ -140,15 +160,6 @@
     "company": "Company",
     "message": "Message",
     "submit": "Submit"
-  },
-  "footer": {
-    "about": "About",
-    "solutions": "Solutions",
-    "blog": "Blog",
-    "careers": "Careers",
-    "policy": "Privacy Policy",
-    "contact": "Contact",
-    "media": [],
-    "rights": "Copyright: © 2025 Fregata Space. All rights reserved."
   }
+
 }

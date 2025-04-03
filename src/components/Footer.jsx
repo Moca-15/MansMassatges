@@ -1,33 +1,112 @@
 import { useTranslation } from 'react-i18next';
-// test 
+import { IconLogo } from '../assets/index.js';
 
 export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="p-4 bg-gray-900 text-white text-center">
-      <div className="space-x-4">
-        <a href="/information">{t('footer.about')}</a>
-        <a href="/solutions">{t('footer.solutions')}</a>
-        <a href="/contact">{t('footer.contact')}</a>
-      </div>
-      <p className="mt-4"> {t('footer.rights')}</p>
-      <div class="linked-image">
-          <a class="Facebook" href="https://www.facebook.com/" target="_blank">
-              <img src="https://images.seeklogo.com/logo-png/27/1/facebook-logo-png_seeklogo-273078.png?v=1957936080409174768" width="50px" height="50px" />
-          </a>
-          <a class="Instagram" href="https://www.instagram.com/" target="_blank">
-              <img src="https://images.seeklogo.com/logo-png/43/1/instagram-new-2022-logo-png_seeklogo-438252.png?v=1957907345596552104" width="50px" height="50px" />
-          </a>
-          <a class="X" href="https://www.x.com/" target="_blank">
-              <img src="https://images.seeklogo.com/logo-png/49/1/twitter-x-logo-png_seeklogo-492395.png?v=1957908349124828952" width="50px" height="50px" />
-          </a>
-          <a class="Youtube" href="https://www.youtube.com/channel/" target="_blank">
-              <img src="https://images.seeklogo.com/logo-png/31/1/youtube-2017-icon-logo-png_seeklogo-316067.png?v=1957936064225231056" width="50px" height="50px" />
-          </a>
-      </div>
+    <footer className="footer-container">
+      {/* Main footer content */}
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        {/* Grid for the 4 columns */}
+        <div className="grid grid-cols-4 gap-8 items-center">
+          {/* Column 1 - Logo and Copyright */}
+          <div className="flex flex-col items-center">
+            <a href="/home" className="mb-4">
+              <img src={IconLogo} alt="Fregata Space" className="h-45" />
+            </a>
+            <p className="text-sm text-gray-400 text-center">
+              {t('footer.rights')}
+            </p>
+          </div>
 
+          {/* Columns 2, 3, 4 (together to display logos below :) ) */}
+          <div className="col-span-3">
+            {/* divider */}
+            <div className="grid grid-cols-3 gap-8 mb-8 pb-16 border-b border-gray-700"> 
+              {/* Column 2 - Company */}
+              <div className="flex flex-col items-center">
+                <h3 className="text-white font-bold mb-4">{t('footer.company')}</h3>
+                <ul className="space-y-2 text-center">
+                  <li>
+                    <a href="/policies" className="text-gray-400 hover:text-white transition">
+                      {t('footer.policies')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/terms" className="text-gray-400 hover:text-white transition">
+                      {t('footer.terms')}
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
+              {/* Column 3 - Features */}
+              <div className="flex flex-col items-center">
+                <h3 className="text-white font-bold mb-4">{t('footer.features')}</h3>
+                <ul className="space-y-2 text-center">
+                  <li>
+                    <a href="/products" className="text-gray-400 hover:text-white transition">
+                      {t('footer.ai')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/pricing" className="text-gray-400 hover:text-white transition">
+                      {t('footer.pricing')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/examples" className="text-gray-400 hover:text-white transition">
+                      {t('footer.examples')}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Column 4 - Support */}
+              <div className="flex flex-col items-center">
+                <h3 className="text-white font-bold mb-4">{t('footer.support')}</h3>
+                <ul className="space-y-2 text-center">
+                  <li>
+                    <a href="/contact" className="text-gray-400 hover:text-white transition">
+                      {t('footer.contact')}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/getStarted" className="text-gray-400 hover:text-white transition">
+                      {t('footer.guide')}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Social icons centered below columns 2-4 */}
+            <div className="flex items-center justify-center space-x-6 py-4">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+                <img src="https://images.seeklogo.com/logo-png/27/1/facebook-logo-png_seeklogo-273078.png" 
+                     alt="Facebook" 
+                     className="h-10 w-10" />
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+                <img src="https://images.seeklogo.com/logo-png/43/1/instagram-new-2022-logo-png_seeklogo-438252.png" 
+                     alt="Instagram" 
+                     className="h-10 w-10" />
+              </a>
+              <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+                <img src="https://images.seeklogo.com/logo-png/49/1/twitter-x-logo-png_seeklogo-492395.png" 
+                     alt="X" 
+                     className="h-10 w-10" />
+              </a>
+              <a href="https://www.youtube.com/channel/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
+                <img src="https://images.seeklogo.com/logo-png/31/1/youtube-2017-icon-logo-png_seeklogo-316067.png" 
+                     alt="YouTube" 
+                     className="h-10 w-10" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

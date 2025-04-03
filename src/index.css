@@ -116,9 +116,21 @@ button:focus-visible {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.6), transparent);
+  background: black;
   color: white;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  /* // background: linear-gradient(to top, black, rgba(0, 0, 0, 0.6), transparent); */
+  background: black;
+  color: white;
+}
+
+
 
 .nav-link {
   font-size: 1.125rem; /* equivalent to text-lg */
@@ -195,23 +207,30 @@ rgb(31 41 55) = gray-800
 /* checkout */
 .checkout-container {
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: black;
+  color: white;
 }
 
 .form-section {
-  background: white;
+  background: rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 input {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .submit-button {

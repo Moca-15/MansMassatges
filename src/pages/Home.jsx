@@ -32,7 +32,7 @@ export default function Home() {
       <div className="fixed inset-0 bg-black bg-opacity-50 -z-10"></div>
 
       {/* Secció Hero */}
-      <div className="relative min-h-screen flex items-center justify-center text-center">
+      <div className="relative flex items-center justify-center text-center h-screen">
         <div className="relative z-10 max-w-4xl px-6">
           <h1 className="text-4xl font-extrabold text-white sm:text-6xl">
             {t('hero.headline')} 
@@ -53,7 +53,7 @@ export default function Home() {
               onClick={() => alert(t('hero.ctaRequestDemo'))}
             >
               {t('hero.ctaRequestDemo')}
-            </  button>
+            </button>
           </div>
         </div>
       </div>

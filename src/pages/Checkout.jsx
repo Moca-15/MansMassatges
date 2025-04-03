@@ -47,8 +47,8 @@ const Checkout = () => {
   return (
     <div className="checkout-container flex gap-8 mx-auto p-6">
       {/* Left side - Form */}
-      <div className="flex-1">
-        <h1 className="text-2xl text-black font-bold mb-6">Checkout</h1>
+      <div className="flex-1 ">
+        {/* <h1 className="text-2xl text-black font-bold mb-6">Checkout</h1> */}
         {/* {selectedCamera && (
           <div className="selected-product mb-4">
             <h2 className="text-xl">Selected Product: {selectedCamera}</h2>

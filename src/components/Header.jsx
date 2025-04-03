@@ -10,8 +10,8 @@ export default function Header() {
       {/* esquerra */}
       <div className="linked-image left-container ml-4">
         {/* Logo imatge en comptes de text, likejada a homepage. h-8 és l'alçada */}
-        <a href="/home">
-          <img src={NameLogo} alt="Fregata Space" className="h-8" />
+        <a href="/home" className="flex items-center">
+          <img src={NameLogo} alt="Fregata Space" className="h-16 w-auto" />
         </a>
       </div>
       {/* centre */}

@@ -6,12 +6,54 @@
     "pricing": "Tarifas",
     "getStarted": "Comenzar"
   },
+
+  "footer": {
+    "rights": "Copyright: © 2025 Fregata Space. Todos los derechos reservados.",
+
+    "company": "Empresa",
+    "policies": "Políticas",
+    "terms": "Términos y Condiciones",
+
+    "features": "Características",
+    "ai": "Cámaras AI",
+    "pricing": "Precios",
+    "examples": "Ejemplos Reales",
+
+    "support": "Soporte",
+    "contact": "Contacto",
+    "guide": "Guía de Usuario"
+
+  },
+
+
   "hero": {
     "headline": "Inteligencia Artificial para Imágenes y Vídeos.",
     "subheadline": "Descubre el poder del análisis avanzado de imágenes y vídeos para mejorar la seguridad y alcanzar un rendimiento excepcional",
     "ctaLearnMore": "Saber más",
     "ctaRequestDemo": "Solicitar una Demo"
   },
+
+  "products": {
+    "slogan": "Visión Hábil, Decisiones Inteligentes",
+    "subtitle": "Las mejores herramientas de análisis de imágenes y vídeos al alcance de tu mano",
+    "camera1" : {
+      "title" : "Monitorización de Personas y Mascotas",
+      "description" : "aaa1"
+
+    },
+    "camera2" : {
+      "title" : "Seguridad",
+      "description" : "cam2"
+
+    },
+    "camera3" : {
+      "title" : "Detección de Vehículos",
+      "description" : "cam3"
+    },
+    "learnMore" : "Saber Más"
+  },
+
+
   "about": {
     "headline": "Quiénes Somos",
     "content": "En Fregata Space, lideramos el desarrollo de soluciones de análisis de imágenes y videos basadas en inteligencia artificial, diseñadas para garantizar seguridad y optimizar el rendimiento. Nuestra misión es transformar datos visuales en información útil y práctica, impulsando a empresas y organizaciones en todo el mundo."
@@ -114,15 +156,5 @@
     "company": "Empresa",
     "message": "Mensaje",
     "submit": "Enviar"
-  },
-  "footer": {
-    "about": "Sobre Nosotros",
-    "solutions": "Soluciones",
-    "blog": "Blog",
-    "careers": "Carreras",
-    "policy": "Política de Privacidad",
-    "contact": "Contacto",
-    "media": [],
-    "rights": "Copyright: © 2025 Fregata Space. All rights reserved."
   }
 }

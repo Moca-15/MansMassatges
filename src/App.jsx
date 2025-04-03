@@ -34,6 +34,11 @@ function App() {
             <Route path="/getStarted" element={<GetStarted />} />
             <Route path="/checkout" element={<Checkout />} />
 
+            {/* <Route path="/policies" element={<Policies />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/examples" element={<Examples />} /> */}
+
+
           </Routes>
         </main>
 
