@@ -1,9 +1,9 @@
-export { default as Home } from './Home';
-export { default as Information } from './Information';
-export { default as Products } from './Products';
-export { default as Pricing } from './Pricing';
-export { default as GetStarted } from './GetStarted';
-export { default as Checkout } from './Checkout';   
+export { default as Home } from './home/page';
+export { default as Information } from './information/page';
+export { default as Products } from './products/page';
+export { default as Pricing } from './pricing/page';
+export { default as GetStarted } from './get-started/page';
+export { default as Checkout } from './checkout/page';   
 
 // export { default as Policies } from './Policies'
 // export { default as Terms } from './Terms'

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { About } from '../components/index.js';
+import { About } from '../../components/index.js';
 
-import { HomeBackground } from '../assets/index.js';
+import { HomeBackground } from '../../assets/index.js';
 
 
 

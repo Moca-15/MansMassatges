@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css'
 
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './i18n'; // Comprovar que la conf està inicialitzada!!!
-
 
 // Importar pags
 import { Home, Information, Products, Pricing, GetStarted, Checkout }  from './pages/index.js'
 
 // Importar components
 import { Header, Footer } from './components/index.js'
-
 
 function App() {
   const { t } = useTranslation();
@@ -37,7 +34,6 @@ function App() {
             {/* <Route path="/policies" element={<Policies />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/examples" element={<Examples />} /> */}
-
 
           </Routes>
         </main>

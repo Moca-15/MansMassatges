@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { Pets1, Cars1, People1 } from '../../assets/index.js';
 
 export default function Pricing() {
   const { t } = useTranslation();
@@ -27,7 +28,7 @@ export default function Pricing() {
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('../../pricing/pet.png')" }}
+                style={{ backgroundImage: `url(${Pets1})` }}
               />
               <div className={`absolute inset-0 transition-all duration-200 ${
                 currentCam === 'camera1'
@@ -45,7 +46,7 @@ export default function Pricing() {
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('../../pricing/people.png')" }}
+                style={{ backgroundImage: `url(${People1})` }}
               />
               <div className={`absolute inset-0 transition-all duration-200 ${
                 currentCam === 'camera2'
@@ -63,7 +64,7 @@ export default function Pricing() {
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('../../pricing/cars.png')" }}
+                style={{ backgroundImage: `url(${Cars1})` }}
               />
               <div className={`absolute inset-0 transition-all duration-200 ${
                 currentCam === 'camera3'
@@ -72,8 +73,8 @@ export default function Pricing() {
               }`} />
             </button>
           </div>
-
         </div>
+
         {/* per veure la camera hoverejada */}
         <span className="relative z-10 text-white font-bold my-2 block">
           {hoveredCam !== null ? hoveredCam : '\u00A0'}
@@ -85,9 +86,10 @@ export default function Pricing() {
             <div className="relative rounded-lg overflow-hidden min-h-[400px]">
               <div 
                 className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: "url('/path/to/cam1-bg.jpg')" }}
+                style={{ backgroundImage: `url(${Pets1})` }}
               />
-              <div className="relative z-10 p-12 bg-black bg-opacity-50 h-full">
+              <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
+              <div className="relative z-20 p-12 h-full">
                 <h3 className="text-2xl font-bold text-white mb-4">{t('products.camera1.title')}</h3>
                 <p className="text-white mb-4">{t('products.camera1.description')}</p>
                 <div className="text-3xl font-bold text-white mb-6">{t('products.camera1.price')}</div>
@@ -105,9 +107,10 @@ export default function Pricing() {
             <div className="relative rounded-lg overflow-hidden min-h-[400px]">
               <div 
                 className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: "url('/path/to/cam2-bg.jpg')" }}
+                style={{ backgroundImage: `url(${People1})` }}
               />
-              <div className="relative z-10 p-12 bg-black bg-opacity-50 h-full">
+              <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
+              <div className="relative z-20 p-12 h-full">
                 <h3 className="text-2xl font-bold text-white mb-4">{t('products.camera2.title')}</h3>
                 <p className="text-white mb-4">{t('products.camera2.description')}</p>
                 <div className="text-3xl font-bold text-white mb-6">{t('products.camera2.price')}</div>
@@ -125,9 +128,10 @@ export default function Pricing() {
             <div className="relative rounded-lg overflow-hidden min-h-[400px]">
               <div 
                 className="absolute inset-0 bg-cover bg-center z-0"
-                style={{ backgroundImage: "url('/path/to/cam3-bg.jpg')" }}
+                style={{ backgroundImage: `url(${Cars1})` }}
               />
-              <div className="relative z-10 p-12 bg-black bg-opacity-50 h-full">
+              <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
+              <div className="relative z-20 p-12 h-full">
                 <h3 className="text-2xl font-bold text-white mb-4">{t('products.camera3.title')}</h3>
                 <p className="text-white mb-4">{t('products.camera3.description')}</p>
                 <div className="text-3xl font-bold text-white mb-6">{t('products.camera3.price')}</div>

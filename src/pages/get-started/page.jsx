@@ -1,8 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { About, Solutions, Process, Features, Industries, Testimonials } from '../components/index' 
+import { About, Solutions, Process, Features, Industries, Testimonials } from '../../components/index' 
 
-export default function Info() {
+export default function GetStarted() {
   const { t } = useTranslation();
 
   return (

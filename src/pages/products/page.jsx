@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { People1, Cars1, Pets1, RoadVid } from '../../assets/index.js';
 
 export default function Products() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ export default function Products() {
       {/* video background */}
       <div className="background">
         <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover">
-          <source src="./road.mp4" type="video/mp4" />
+          <source src={RoadVid} type="video/mp4" />
         </video>
       </div>
       <div className="background bg-gradient-to-r from-black via-black/60 to-transparent"></div>
@@ -44,8 +45,8 @@ export default function Products() {
                 </div>
                 <div className="relative">
                   <img 
-                    src="/product-1.jpg" 
-                    alt="Product 1" 
+                    src={People1} 
+                    alt="People Detection Camera" 
                     className="rounded-lg shadow-xl"
                   />
                 </div>
@@ -64,8 +65,8 @@ export default function Products() {
                 </div>
                 <div className="relative">
                   <img 
-                    src="/product-2.jpg" 
-                    alt="Product 2" 
+                    src={Pets1} 
+                    alt="Pet Detection Camera" 
                     className="rounded-lg shadow-xl"
                   />
                 </div>
@@ -84,8 +85,8 @@ export default function Products() {
                 </div>
                 <div className="relative">
                   <img 
-                    src="/product-3.jpg" 
-                    alt="Product 3" 
+                    src={Cars1} 
+                    alt="Vehicle Detection Camera" 
                     className="rounded-lg shadow-xl"
                   />
                 </div>

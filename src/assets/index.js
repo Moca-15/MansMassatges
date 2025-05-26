@@ -1,15 +1,10 @@
 
-export { default as HomeBackground } from './satellite-693280_1920.jpg'
-export { default as NameLogo } from './font_logo.png'
-export { default as IconLogo } from './logo_no_bg.png'
+export { default as HomeBackground } from './images/satellite-693280_1920.jpg'
+export { default as NameLogo } from './logos/font_logo.png'
+export { default as IconLogo } from './logos/logo_no_bg.png'
 
+export { default as Cars1 } from './images/cars.png'
+export { default as People1 } from './images/people.png'
+export { default as Pets1 } from './images/pet.png'
 
-
-// import img1 from './img1.png'
-// import img2 from './img2.png'
-// import img3 from './img3.png'
-// import img4 from './img4.png'
-
-// export {default as HomeImgs} from {
-// img1, img2,img3, img4
-// }
+export { default as RoadVid } from './videos/road.mp4'

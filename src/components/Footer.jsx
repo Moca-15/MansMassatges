@@ -1,5 +1,12 @@
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IconLogo } from '../assets/index.js';
+
+// Import social media icons
+import facebookIcon from '../assets/icons/facebook.png';
+import instagramIcon from '../assets/icons/instagram.png';
+import twitterIcon from '../assets/icons/x.png';
+import youtubeIcon from '../assets/icons/youtube.png';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -84,24 +91,16 @@ export default function Footer() {
             {/* Social icons centered below columns 2-4 */}
             <div className="flex items-center justify-center space-x-6 py-4">
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
-                <img src="https://images.seeklogo.com/logo-png/27/1/facebook-logo-png_seeklogo-273078.png" 
-                     alt="Facebook" 
-                     className="h-10 w-10" />
+                <img src={facebookIcon} alt="Facebook" className="h-10 w-10" />
               </a>
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
-                <img src="https://images.seeklogo.com/logo-png/43/1/instagram-new-2022-logo-png_seeklogo-438252.png" 
-                     alt="Instagram" 
-                     className="h-10 w-10" />
+                <img src={instagramIcon} alt="Instagram" className="h-10 w-10" />
               </a>
               <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
-                <img src="https://images.seeklogo.com/logo-png/49/1/twitter-x-logo-png_seeklogo-492395.png" 
-                     alt="X" 
-                     className="h-10 w-10" />
+                <img src={twitterIcon} alt="X" className="h-10 w-10" />
               </a>
               <a href="https://www.youtube.com/channel/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition">
-                <img src="https://images.seeklogo.com/logo-png/31/1/youtube-2017-icon-logo-png_seeklogo-316067.png" 
-                     alt="YouTube" 
-                     className="h-10 w-10" />
+                <img src={youtubeIcon} alt="YouTube" className="h-10 w-10" />
               </a>
             </div>
           </div>
