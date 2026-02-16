@@ -1,14 +1,15 @@
 {
   "header": {
-    "home": "Fregata Technologies",
-    "about": "What We Do",
-    "products": "Products",
-    "pricing": "Pricing",
-    "getStarted": "Get Started"
+    "home": "Köet",
+    "about": "Qui Soc",
+    "services": "Serveis",
+    "cupons": "Vals Regal",
+    "contact": "Contacte",
+    "bookings": "Reserves"
   },
 
   "footer": {
-    "rights": "Copyright: © 2025 Fregata Technologies. All rights reserved.",
+    "rights": "Copyright: © 2025 Köet Massatges. All rights reserved.",
 
     "company": "Company",
     "policies": "Policies",
@@ -25,17 +26,84 @@
 
   },
 
+  "services": {
+    "clauses": "Els pagaments es fan per avançat",
+    "service1": {
+      "name": "Esportiu",
+      "descripotion": "descripció",
+      "options": [ 
+        {
+          "name": "Fita 60",
+          "description":"descripció",
+          "duration": 60,
+          "price": 0
+        },
+        {
+          "name": "Fita 90",
+          "description":"descripció",
+          "duration": 60,
+          "price": 0
+        }
+      ]
+
+    },
+    "service2": {
+      "name":"Descontracturant",
+      "description": "descripció",
+      "options": [
+        {
+          "name": "Köet",
+          "description":"descripció",
+          "duration": 90,
+          "price": 0
+        }
+      ]
+    },
+    "service3": {
+      "name":"Relaxant",
+      "description": "descripció",
+      "options":[
+        {
+          "name": "Ritual Valeriana",
+          "description":"descripció",
+          "duration": 90,
+          "price": 0
+        },
+        {
+          "name": "Ritual Vol",
+          "description":"descripció",
+          "duration": 90,
+          "price": 0
+        }
+      ]
+    }
+  },
+
+  "cupons": {
+
+  },
+
+  "contact": {
+    "message": "",
+    "phone": "676689868"
+  },
+
+  "bookings": {
+
+  },
+
+
 
   "hero": {
-    "headline": "AI-Driven Insights From Images and Videos",
-    "subheadline": "Unlock the potential of advanced image and video analytics for enhanced security and unparalleled performance.",
+    "headline": "Köet Massatges",
+    "subheadline": "Agnès Casablancas",
     "ctaLearnMore": "Learn More",
     "ctaRequestDemo": "Request a Demo"
   },
 
   "products": {
-    "slogan": "Smart Vision, Smarter Decisions",
-    "subtitle": "Top notch image and video analysis tools within your reach",
+    "slogan": "slogan",
+    "subtitle": "subtítol",
     "camera1" : {
       "title" : "People and pet monitoring",
       "description" : "description here ",
@@ -151,15 +219,6 @@
         "author": "Mark T., Operations Head"
       }
     ]
-  },
-  "contact": {
-    "headline": "Get in Touch",
-    "description": " Ready to take your analytics to the next level? Contact us to discuss your project or request a demo.",
-    "name": "Name",
-    "email": "Email",
-    "company": "Company",
-    "message": "Message",
-    "submit": "Submit"
   }
 
 }

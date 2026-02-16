@@ -33,7 +33,7 @@ export default function Home() {
 
       {/* Secció Hero */}
       <div className="relative flex items-center justify-center text-center h-screen">
-        <div className="relative z-10 max-w-4xl px-6">
+        <div className="relative z-4 max-w-4xl px-6">
           <h1 className="text-4xl font-extrabold text-white sm:text-6xl">
             {t('hero.headline')} 
           </h1>

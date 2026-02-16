@@ -1,5 +1,5 @@
 
-export { default as HomeBackground } from './images/satellite-693280_1920.jpg'
+export { default as HomeBackground } from './images/pexels-dashamak-10894308.jpg'
 export { default as NameLogo } from './logos/font_logo.png'
 export { default as IconLogo } from './logos/logo_no_bg.png'
 

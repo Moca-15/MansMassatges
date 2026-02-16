@@ -20,6 +20,7 @@ export default function Header() {
           <img src={NameLogo} alt="Fregata Space" className="h-16 w-auto" />
         </Link>
       </div>
+
       {/* centre */}
       <nav className="flex flex-1 justify-center">
         <div className="nav-links-container">
@@ -30,25 +31,32 @@ export default function Header() {
             {t('header.about')}
           </Link>
           <Link 
-            to="/products" 
-            className={`nav-link ${isActive('/products') ? 'text-gray-500 font-black mx-2' : ''}`}
+            to="/services" 
+            className={`nav-link ${isActive('/services') ? 'text-gray-500 font-black mx-2' : ''}`}
           >
-            {t('header.products')}
+            {t('header.services')}
           </Link>
           <Link 
-            to="/pricing" 
-            className={`nav-link ${isActive('/pricing') ? 'text-gray-500 font-black mx-2' : ''}`}
+            to="/information" 
+            className={`nav-link ${isActive('/information') ? 'text-gray-500 font-black mx-2' : ''}`}
           >
-            {t('header.pricing')}
+            {t('header.cupons')}
           </Link>
           <Link 
-            to="/getStarted" 
-            className={`nav-link ${isActive('/getStarted') ? 'text-gray-500 font-black mx-2' : ''}`}
+            to="/information" 
+            className={`nav-link ${isActive('/information') ? 'text-gray-500 font-black mx-2' : ''}`}
           >
-            {t('header.getStarted')}
+            {t('header.contact')}
+          </Link>
+          <Link 
+            to="/information" 
+            className={`nav-link ${isActive('/information') ? 'text-gray-500 font-black mx-2' : ''}`}
+          >
+            {t('header.bookings')}
           </Link>
         </div>
       </nav>
+
       {/* dreta */}
       <div className="right-container">
         <LanguageSwitcher />
