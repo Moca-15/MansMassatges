@@ -1,0 +1,25 @@
+
+cars1.mp4:
+https://www.pexels.com/video/different-kinds-of-vehicles-on-the-freeway-2053100/
+https://videos.pexels.com/video-files/2053100/2053100-uhd_2560_1440_30fps.mp4
+
+
+
+For testing:
+    If URL is a static image (.jpg, .png) → Should Use Method 1 (JavaScript refresh).
+    If URL is an MJPEG stream (.mjpg) → Should Use Method 2 (direct <img>).
+    If URL is an HLS stream (.m3u8) → Should Use Method 3 (Video.js).
+
+
+For JPEG/PNG Image URL testing: 
+http://185.102.215.186/current/5445copyright!!/sergelstorg_live.jpg?counter=1740820249594
+    from: http://www.webbkameror.se/webbkameror/sergelstorg/
+
+
+For Streaming MJPEG Feed testing:
+
+
+
+
+
+oscararnabat3@gmail.com
