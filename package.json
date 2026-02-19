@@ -1,9 +1,9 @@
 {
   "name": "mans",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://moca-15.github.io/MansMassatges/",
+  "homepage": "https://moca-15.github.io/MansMassatges",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

@@ -13,4 +13,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: 'https://moca-15.github.io/MansMassatges/', 
   plugins: [react()],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 })
