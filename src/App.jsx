@@ -6,10 +6,10 @@ import { useTranslation } from 'react-i18next';
 import './i18n'; // Comprovar que la conf està inicialitzada!!!
 
 // Importar pags
-import { Home, Information, Products, Pricing, GetStarted, Checkout, Services }  from './pages/index.js'
+import { Home } from './pages'
 
 // Importar components
-import { Header, Footer } from './components/index.js'
+import { Header, Footer } from './static_components/index.js'
 
 function App() {
   const { t } = useTranslation();
@@ -25,17 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
-            <Route path="/information" element={<Information />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/getStarted" element={<GetStarted />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/services" element={<Services />} />
-            
 
-            {/* <Route path="/policies" element={<Policies />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/examples" element={<Examples />} /> */}
 
           </Routes>
         </main>

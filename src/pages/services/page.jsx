@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { About, Services } from '../../components/index.js';
 
 import { HomeBackground } from '../../assets/index.js';
 
@@ -23,9 +22,6 @@ export default function Home() {
       <Services/>
       <Services/>
       <Services/>
-
-
-
     </section>
   );
 }

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { About } from '../../components/index.js';
 
 import { HomeBackground } from '../../assets/index.js';
+import { RoundLogoTransparent } from '../../assets/index.js'
 
 
 
@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <section className="relative min-h-screen text-gray-800">
+    <section className="relative min-h-screen">
       {/* background Added parallax effect */}
       <div 
         className="fixed inset-0 bg-cover bg-center -z-10 bg-fixed"
@@ -29,38 +29,22 @@ export default function Home() {
           transform: 'translateY(calc(var(--scroll) * (-0.15px)))',
         }}
       ></div>
-      <div className="fixed inset-0 bg-black bg-opacity-50 -z-10"></div>
+      <div className="fixed inset-0 bg-black bg-opacity-50 -z-10"></div> {/* opacitat negra pel fons */}
 
-      {/* Secció Hero */}
-      <div className="relative flex items-center justify-center text-center h-screen">
-        <div className="relative z-4 max-w-4xl px-6">
-          <h1 className="text-4xl font-extrabold text-white sm:text-6xl">
-            {t('hero.headline')} 
-          </h1>
-          <p className="mt-4 text-lg text-gray-300 sm:text-xl">
-            {t('hero.subheadline')}
-          </p>
-
-          <div className="mt-6 flex justify-center space-x-4">
-            <button
-              className="px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 rounded-md transition"
-              onClick={() => document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' })}
-            >
-              {t('hero.ctaLearnMore')}
-            </button>
-            <button
-              className="px-6 py-3 text-blue-600 bg-white border border-blue-600 hover:bg-gray-100 rounded-md transition"
-              onClick={() => alert(t('hero.ctaRequestDemo'))}
-            >
-              {t('hero.ctaRequestDemo')}
-            </button>
-          </div>
-        </div>
+      {/* <div className="relative flex items-center justify-center text-center h-screen">
+      </div> */}
+      {/* items-center -> vertical, justify-center -> horitzontal */}
+      <div className="relative flex justify-center top-32">
+        <img 
+          src={RoundLogoTransparent} 
+          alt="Mans Massatges - Agnès Casablancas" 
+          className="shadow-2xl"
+          style={{borderRadius:'50%'}}
+          width={350}
+          height={350}
+        />
       </div>
 
-      {/* Secció About */}
-
-      <About />
 
 
     </section>
