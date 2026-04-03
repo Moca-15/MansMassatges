@@ -120,16 +120,6 @@ button:focus-visible {
   color: white;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  /* // background: linear-gradient(to top, black, rgba(0, 0, 0, 0.6), transparent); */
-  background: black;
-  color: white;
-}
-
 .divider {
   position: relative;
   min-width:2px;
@@ -217,3 +207,18 @@ rgb(31 41 55) = gray-800
   /* background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.6), transparent); */
   color: transparent;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

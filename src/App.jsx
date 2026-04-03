@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import './i18n'; // Comprovar que la conf està inicialitzada!!!
 
 // Importar pags
-import { Home } from './pages'
+import { Home, About } from './pages'
 
 // Importar components
 import { Header, Footer } from './static_components/index.js'
@@ -25,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
 
 
           </Routes>
