@@ -1,0 +1,569 @@
+/* ============================================
+   SLIDESHOW COMPONENT STYLES
+   Responsive design for all device widths
+   ============================================ */
+
+/* Base Container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Slideshow Main Container */
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Default for tablets and small desktops */
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Slides Container */
+.slides-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Individual Slide */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide Images */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ============================================
+   SLIDE ANIMATIONS
+   ============================================ */
+
+/* Exit Animations */
+.slide.current.exiting-next {
+  animation: slideOutLeft 0.6s ease-in-out forwards;
+}
+
+.slide.current.exiting-prev {
+  animation: slideOutRight 0.6s ease-in-out forwards;
+}
+
+/* Enter Animations */
+.slide.entering {
+  z-index: 2;
+}
+
+.slide.entering.next {
+  animation: slideInRight 0.6s ease-in-out forwards;
+}
+
+.slide.entering.prev {
+  animation: slideInLeft 0.6s ease-in-out forwards;
+}
+
+/* Keyframes */
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0.8;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   GRADIENT OVERLAY
+   ============================================ */
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(
+    to top,
+    rgba(128, 128, 128, 0.7),
+    rgba(128, 128, 128, 0.3),
+    transparent
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* ============================================
+   TEXT OVERLAY
+   ============================================ */
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.example-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  font-weight: 600;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.25em 0.5em;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+/* ============================================
+   NAVIGATION ARROWS
+   ============================================ */
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 12;
+  color: #333;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-arrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.nav-arrow-left {
+  left: 20px;
+}
+
+.nav-arrow-right {
+  right: 20px;
+}
+
+/* ============================================
+   SLIDE INDICATORS
+   ============================================ */
+
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 12;
+}
+
+.indicator {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scaleY(1.5);
+}
+
+.indicator.active {
+  background: white;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   Different widths for every device
+   ============================================ */
+
+/* Extra Small Devices (Phones, 0-480px) */
+@media (max-width: 480px) {
+  .slideshow {
+    height: 40vh; /* Smaller on very small phones */
+  }
+
+  .gradient-overlay {
+    height: 50%; /* More gradient on small screens */
+  }
+
+  .example-text {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0.2em 0.4em;
+  }
+
+  .nav-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-arrow-left {
+    left: 10px;
+  }
+
+  .nav-arrow-right {
+    right: 10px;
+  }
+
+  .indicators {
+    gap: 6px;
+    bottom: 10px;
+  }
+
+  .indicator {
+    width: 25px;
+  }
+
+  .indicator.active {
+    width: 40px;
+  }
+}
+
+/* Small Devices (Phones, 481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .slideshow {
+    height: 45vh;
+  }
+
+  .gradient-overlay {
+    height: 45%;
+  }
+
+  .example-text {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-arrow svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-arrow-left {
+    left: 12px;
+  }
+
+  .nav-arrow-right {
+    right: 12px;
+  }
+
+  .indicators {
+    gap: 8px;
+    bottom: 12px;
+  }
+
+  .indicator {
+    width: 30px;
+  }
+
+  .indicator.active {
+    width: 45px;
+  }
+}
+
+/* Medium Devices (Tablets, 769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .slideshow {
+    height: 55vh;
+  }
+
+  .example-text {
+    font-size: 3rem;
+  }
+
+  .nav-arrow {
+    width: 44px;
+    height: 44px;
+  }
+
+  .indicators {
+    gap: 10px;
+  }
+
+  .indicator {
+    width: 35px;
+  }
+
+  .indicator.active {
+    width: 50px;
+  }
+}
+
+/* Large Devices (Desktops, 1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .slideshow {
+    height: 60vh;
+  }
+
+  .example-text {
+    font-size: 3.5rem;
+  }
+
+  .nav-arrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .indicators {
+    gap: 12px;
+  }
+
+  .indicator {
+    width: 40px;
+  }
+
+  .indicator.active {
+    width: 55px;
+  }
+}
+
+/* Extra Large Devices (Large Desktops, 1201px - 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .slideshow {
+    height: 65vh;
+  }
+
+  .example-text {
+    font-size: 4rem;
+  }
+
+  .nav-arrow {
+    width: 52px;
+    height: 52px;
+  }
+
+  .nav-arrow svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .indicators {
+    gap: 14px;
+  }
+
+  .indicator {
+    width: 45px;
+  }
+
+  .indicator.active {
+    width: 60px;
+  }
+}
+
+/* Ultra Wide Devices (4K, 1601px and above) */
+@media (min-width: 1601px) {
+  .slideshow {
+    height: 70vh;
+  }
+
+  .example-text {
+    font-size: 5rem;
+    letter-spacing: 3px;
+  }
+
+  .nav-arrow {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-arrow svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-arrow-left {
+    left: 30px;
+  }
+
+  .nav-arrow-right {
+    right: 30px;
+  }
+
+  .indicators {
+    gap: 16px;
+    bottom: 30px;
+  }
+
+  .indicator {
+    width: 50px;
+    height: 5px;
+  }
+
+  .indicator.active {
+    width: 70px;
+  }
+}
+
+/* ============================================
+   LANDSCAPE MODE SUPPORT
+   ============================================ */
+
+@media (orientation: landscape) and (max-height: 600px) {
+  .slideshow {
+    height: 85vh; /* Taller in landscape on small screens */
+  }
+
+  .example-text {
+    font-size: 2rem;
+  }
+
+  .indicators {
+    bottom: 8px;
+  }
+
+  .gradient-overlay {
+    height: 60%;
+  }
+}
+
+/* ============================================
+   TOUCH DEVICE OPTIMIZATIONS
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  .nav-arrow {
+    background: rgba(255, 255, 255, 0.8);
+    width: 44px;
+    height: 44px;
+  }
+
+  .nav-arrow:hover {
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .indicator {
+    min-width: 30px;
+  }
+
+  .indicator:hover {
+    transform: scaleY(1);
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .slideshow {
+    height: auto;
+    break-inside: avoid;
+  }
+
+  .nav-arrow,
+  .indicators {
+    display: none;
+  }
+
+  .slide {
+    position: relative;
+    page-break-inside: avoid;
+  }
+
+  .slide.current.exiting-next,
+  .slide.current.exiting-prev {
+    animation: none;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .slide.current.exiting-next,
+  .slide.current.exiting-prev,
+  .slide.entering.next,
+  .slide.entering.prev {
+    animation: none;
+  }
+  
+  .nav-arrow {
+    transition: none;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.nav-arrow:focus-visible,
+.indicator:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
+}

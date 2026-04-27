@@ -5,10 +5,11 @@ import './../../styles/home.css'
 
 import { HomeBackground } from '../../assets/index.js';
 import { RoundLogoTransparent } from '../../assets/index.js'
-import { Profile } from '../../assets/index.js'
 import { Massage1 } from '../../assets/index.js';
 import { Massage2 } from '../../assets/index.js';
 
+import { Slideshow } from '../../static_components/index.js';
+import { Profile } from '../../static_components/index.js';
 
 
 export default function Home() {
@@ -95,70 +96,13 @@ export default function Home() {
       </section>
 
 
+      <Profile/> 
 
-      {/* Profile */}
-      <section className="about-section">
-        <div className="about-container">
-          <div className="about-image-wrapper">
-            <img 
-              src={Profile} 
-              alt="Agnès Casablancas - Professional Massage Therapist" 
-              className="about-image"
-            />
-          </div>
-          <div className="about-content">
-            <h2 className="about-title">
-              {t('home.about.title', 'About Agnès Casablancas')}
-            </h2>
-            
-            <p className="about-description">
-              {t('home.about.description1', 
-                'With over 15 years of experience in therapeutic massage, Agnès specializes in helping clients find relief from chronic pain, reduce stress, and restore balance to their bodies. Her holistic approach combines traditional techniques with modern understanding of anatomy and physiology.'
-              )}
-            </p>
-            <p className="about-description">
-              {t('home.about.description2',
-                'Every session is personalized to address your specific needs, whether you\'re dealing with muscle tension, recovering from an injury, or simply seeking a moment of tranquility in your busy life.'
-              )}
-            </p>
-
-            {/* Features List */}
-            <ul className="about-features">
-              <li className="about-feature-item">
-                <span className="about-feature-icon">✓</span>
-                <span>
-                  {t('home.about.feature1', 'More than 15 years of professional experience')}
-                </span>
-              </li>
-              <li className="about-feature-item">
-                <span className="about-feature-icon">✓</span>
-                <span>
-                  {t('home.about.feature2', 'Specialized in deep tissue and sports massage')}
-                </span>
-              </li>
-                            <li className="about-feature-item">
-                <span className="about-feature-icon">✓</span>
-                <span>
-                  {t('home.about.feature3', 'Certified in prenatal and postnatal massage')}
-                </span>
-              </li>
-              <li className="about-feature-item">
-                <span className="about-feature-icon">✓</span>
-                <span>
-                  {t('home.about.feature4', 'Member of the International Massage Association')}
-                </span>
-              </li>
-            </ul>
-
-            {/* CTA Button */}
-            {/* <Link to="/home" className="about-button">
-              {t('home.about.button', 'Learn more about Agnès')}
-            </Link> */}
-          </div>
-        </div>
-      </section>
+      
 
 
+
+      <Slideshow/>
 
 
       

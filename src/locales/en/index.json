@@ -1,7 +1,7 @@
 {
   "header": {
     "home": "Mans",
-    "about": "Qui Soc",
+    "about": "Sobre Mi",
     "services": "Serveis",
     "cupons": "Vals Regal",
     "contact": "Contacte",
@@ -37,7 +37,11 @@
   },
 
 
-  "about": {
+  "home": {
+    "about": {
+      "title": "Sobre mi",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacinia pretium. Cras blandit elit vel malesuada imperdiet. Praesent sollicitudin nisl at scelerisque dictum."
+    }
 
   },
 
