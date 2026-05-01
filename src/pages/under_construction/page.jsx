@@ -29,8 +29,6 @@ const UnderConstruction = () => {
                 
                 <h3 className="title-big">En Construcció</h3>
                 <h2 className="title-smol">En construcción · En Construction · Under Construction</h2>
-                {/* <h2 className="title-smol"></h2>
-                <h2 className="title-smol"></h2> */}
 
                 <p className="message-big">
                     Aquesta pàgina no està disponible actualment. Contacta +34 676 68 98 68 per a més informació.
