@@ -1,6 +1,8 @@
 
 export { default as HomeBackground } from './images/background.jpg'
+
 export { default as MLogo } from './logos/brown_m.png'
+export { default as LogoBlue } from './logos/logosSVG-08.svg'
 export { default as RoundLogoTransparent } from './logos/round_logo_transparent.png'
 
 export { default as Profile } from './images/profile.jpg'

@@ -3,6 +3,9 @@ import React from 'react';
 import './../../styles/under_construction.css'
 
 import { HomeBackground } from '../../assets/index.js';
+import { LogoBlue } from '../../assets/index.js';
+
+
 
 const UnderConstruction = () => {
   return (
@@ -12,10 +15,17 @@ const UnderConstruction = () => {
         ></div>
         <div className="fixed inset-0 bg-black bg-opacity-50 -z-10"></div> {/* opacitat negra pel fons */}
 
-        <div className=""></div>
+        
+
         <div className="construction-container">
             <div className="construction-content">
-                <div className="icon">🚧</div>
+                <div className="icon-container">
+                    <img 
+                        src={LogoBlue} 
+                        alt="Under Construction" 
+                        className="construction-icon"
+                    />
+                </div>
                 
                 <h3 className="title-big">En Construcció</h3>
                 <h2 className="title-smol">En construcción · En Construction · Under Construction</h2>
@@ -32,7 +42,7 @@ const UnderConstruction = () => {
                     This website is currently unavailable. Contact +34 676 68 98 68 for more information.
                 </p>
                 <p className="message-smol">
-                    Notre site web est actuellement en construction. Revenez bientôt !
+                    Ce cite web n'est pas disponible. Contactez +34 676 68 98 68 pour plus d'information.
                 </p>
             </div>
         </div>
