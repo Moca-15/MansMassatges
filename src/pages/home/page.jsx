@@ -3,13 +3,15 @@ import { useTranslation } from 'react-i18next';
 import './../../styles/home.css'
 
 
-import { HomeBackground } from '../../assets/index.js';
-import { RoundLogoTransparent } from '../../assets/index.js'
+import { HomeBackground, LogoGris } from '../../assets/index.js';
+import { LogoGrisFull } from '../../assets/index.js'
+
 import { Massage1 } from '../../assets/index.js';
 import { Massage2 } from '../../assets/index.js';
+import { ProfileImg } from './../../assets/index.js' 
+
 
 import { Slideshow } from '../../static_components/index.js';
-import { Profile } from '../../static_components/index.js';
 
 
 export default function Home() {
@@ -71,8 +73,7 @@ export default function Home() {
       {/* background wt logo */}
       <section className='relative'>
         <div className="relative h-screen">
-          <div 
-            className="fixed inset-0 bg-cover bg-center -z-10 bg-fixed"
+          <div className="fixed inset-0 bg-cover bg-center -z-10 bg-fixed"
             style={{ 
               backgroundImage: `url(${HomeBackground})`,
               // scroll -0.5px perquè el fons baixi en scroll però amb delay
@@ -83,8 +84,7 @@ export default function Home() {
 
           {/* items-center -> vertical, justify-center -> horitzontal */}
           <div className="relative flex items-center justify-center top-32">
-            <img 
-              src={RoundLogoTransparent} 
+            <img src={LogoGrisFull} 
               alt="Mans Massatges - Agnès Casablancas" 
               className="shadow-2xl"
               style={{borderRadius:'50%'}}
@@ -95,8 +95,28 @@ export default function Home() {
         </div>
       </section>
 
-
-      <Profile/> 
+      {/* SOBRE MI: TODO: afegir botó */}
+      <section className="about-section">
+            <div className="about-container">
+              <div className="about-image-wrapper">
+                <img 
+                  src={ProfileImg} 
+                  alt="Professional Massage Therapist" 
+                  className="about-image"
+                />
+              </div>
+              <div className="about-content">
+                <h2 className="about-title">
+                  {t('home.about.title', 'About Agnès Casablancas')}
+                </h2>
+                
+                <p className="about-description">
+                  {t('home.about.description')}
+                </p>
+      
+              </div>
+            </div>
+      </section>
 
       
 
@@ -185,7 +205,7 @@ export default function Home() {
       {/* <seciton style={{ backgroundColor: '#EEE9E3'}}>
         <div className="relative flex items-center left-64" style={{ backgroundColor: '#EEE9E3'}}>
           <img 
-            src={Profile} 
+            src={ProfileImg} 
             alt="Mans Massatges - Agnès Casablancas" 
             className="shadow-2xl"
             style={{borderRadius:'50%'}}

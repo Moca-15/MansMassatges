@@ -79,3 +79,226 @@
   /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
   letter-spacing: 0.5px;
 }
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* ===== About Page Container ===== */
+.about-page {
+  background-color: #efe9e4;
+  min-height: 100vh;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+/* ===== Hero Section ===== */
+.about-hero {
+  position: relative;
+  background-color: #474d51;
+  padding: 100px 40px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #474d51 0%, #6c8b7e 100%);
+  opacity: 0.95;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero-title {
+  color: #efe9e4;
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+.about-hero-divider {
+  width: 80px;
+  height: 2px;
+  background-color: #d97a5c;
+  margin: 24px auto 0;
+}
+
+/* ===== Main Content ===== */
+.about-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+/* ===== Content Wrapper (Image + Text Side by Side) ===== */
+.about-content-wrapper {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+}
+
+/* ===== Image Section ===== */
+.about-image-section {
+  flex: 1 1 400px;
+  position: relative;
+}
+
+.about-image-frame {
+  position: relative;
+  z-index: 2;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(71, 77, 81, 0.15);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+.about-image-accent {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #c6a77a;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* ===== Text Section ===== */
+.about-text-section {
+  flex: 1 1 400px;
+}
+
+.about-section-tag {
+  color: #d97a5c;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+}
+
+.about-text-divider {
+  width: 50px;
+  height: 2px;
+  background-color: #6c8b7e;
+  margin-bottom: 32px;
+}
+
+/* ===== Credentials List ===== */
+.about-credentials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-credential-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about-credential-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c6a77a;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.about-credential-text {
+  color: #474d51;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+/* ===== Philosophy Cards Grid ===== */
+.about-philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.about-philosophy-card {
+  background-color: #ffffff;
+  padding: 48px 40px;
+  border-radius: 4px;
+  box-shadow: 0 10px 40px rgba(71, 77, 81, 0.06);
+  border-left: 3px solid #6c8b7e;
+}
+
+.about-philosophy-title {
+  color: #474d51;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 0 16px 0;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+.about-philosophy-divider {
+  width: 40px;
+  height: 2px;
+  background-color: #d97a5c;
+  margin-bottom: 24px;
+}
+
+.about-philosophy-content {
+  color: #474d51;
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 24px 50px;
+  }
+
+  .about-hero-title {
+    font-size: 36px;
+  }
+
+  .about-main {
+    padding: 50px 24px;
+  }
+
+  .about-content-wrapper {
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+
+  .about-image-accent {
+    bottom: -10px;
+    right: -10px;
+  }
+
+  .about-philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-philosophy-card {
+    padding: 36px 28px;
+  }
+}

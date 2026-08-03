@@ -16,35 +16,6 @@ import { Header, Footer } from './static_components/index.js'
 
 // FOR DEPLOYMENT
 
-// function App() {
-//   const { t } = useTranslation();
-
-//   return (
-//     <Router>
-//       <div className="flex flex-col min-h-screen">
-//         {/* Header */}
-//         <Header />
-
-//         {/* Main Content (només rutes de pags, les de components són per test/debug*/}
-//         <main className="flex-grow">
-//           <Routes>
-//             <Route path="/" element={<Home />} />
-//             <Route path="/home" element={<Home />} />
-//             <Route path="/about" element={<About />} />
-//             <Route path="/test" element={<Test />} />
-
-
-//           </Routes>
-//         </main>
-
-//         {/* Footer */}
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// }
-
-// FOR CONSTRUCTION
 function App() {
   const { t } = useTranslation();
 
@@ -52,10 +23,17 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         {/* Header */}
+        <Header />
+
         {/* Main Content (només rutes de pags, les de components són per test/debug*/}
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<UC />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/test" element={<Test />} />
+
+
           </Routes>
         </main>
 
@@ -65,6 +43,28 @@ function App() {
     </Router>
   );
 }
+
+// // FOR CONSTRUCTION
+// function App() {
+//   const { t } = useTranslation();
+
+//   return (
+//     <Router>
+//       <div className="flex flex-col min-h-screen">
+//         {/* Header */}
+//         {/* Main Content (només rutes de pags, les de components són per test/debug*/}
+//         <main className="flex-grow">
+//           <Routes>
+//             <Route path="/" element={<UC />} />
+//           </Routes>
+//         </main>
+
+//         {/* Footer */}
+//         <Footer />
+//       </div>
+//     </Router>
+//   );
+// }
 
 
 export default App;

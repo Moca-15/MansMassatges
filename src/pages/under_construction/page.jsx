@@ -3,7 +3,7 @@ import React from 'react';
 import './../../styles/under_construction.css'
 
 import { HomeBackground } from '../../assets/index.js';
-import { LogoBlue } from '../../assets/index.js';
+import { LogoGris } from '../../assets/index.js';
 
 
 
@@ -21,7 +21,7 @@ const UnderConstruction = () => {
             <div className="construction-content">
                 <div className="icon-container">
                     <img 
-                        src={LogoBlue} 
+                        src={LogoGris} 
                         alt="Under Construction" 
                         className="construction-icon"
                     />

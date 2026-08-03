@@ -1,10 +1,9 @@
 import { React } from 'react';
 import './../../styles/profile.css';
-import { Profile } from '../../assets';
-import { HomeBackground } from '../../assets/index.js';
+import { ProfileImg } from '../../assets';
 
 
-
+/*
 export default function App() {
   return (
     <section className='relative'>
@@ -13,7 +12,7 @@ export default function App() {
             <div className="content">
                 <div className='image-wrapper'>
                     <img 
-                        src={Profile}
+                        src={ProfileImg}
                         alt="Profile Image" 
                         className="main-image"
                     />
@@ -51,3 +50,80 @@ export default function App() {
     </section>
   );
 }
+*/
+
+
+
+const AboutPage = () => {
+  return (
+    <div className="about-page">
+      {/* Hero Section */}
+      <div className="about-hero">
+        <div className="about-hero-overlay" />
+        <div className="about-hero-content">
+          <h1 className="about-hero-title">Meet Your Therapist</h1>
+          <div className="about-hero-divider" />
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="about-main">
+        <div className="about-content-wrapper">
+          {/* Image Section */}
+          <div className="about-image-section">
+            <div className="about-image-frame">
+              <img
+                src={ProfileImg}
+                alt="Massage therapist in a calm, professional setting"
+                className="about-image"
+              />
+            </div>
+            <div className="about-image-accent" />
+          </div>
+
+          {/* Text Section */}
+          <div className="about-text-section">
+            <h2 className="about-section-tag">About</h2>
+            <div className="about-text-divider" />
+
+            <div className="about-credentials">
+              <div className="about-credential-item">
+                <span className="about-credential-dot" />
+                <p className="about-credential-text"></p>
+              </div>
+              <div className="about-credential-item">
+                <span className="about-credential-dot" />
+                <p className="about-credential-text"></p>
+              </div>
+              <div className="about-credential-item">
+                <span className="about-credential-dot" />
+                <p className="about-credential-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Philosophy Cards */}
+        <div className="about-philosophy-grid">
+          <div className="about-philosophy-card">
+            <h3 className="about-philosophy-title">My Philosophy</h3>
+            <div className="about-philosophy-divider" />
+            <div className="about-philosophy-content">
+              {/* Placeholder for philosophy text */}
+            </div>
+          </div>
+
+          <div className="about-philosophy-card">
+            <h3 className="about-philosophy-title">My Approach</h3>
+            <div className="about-philosophy-divider" />
+            <div className="about-philosophy-content">
+              {/* Placeholder for approach text */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutPage;

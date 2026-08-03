@@ -16,7 +16,7 @@ export { default as LogoGris } from './logos/logosSVG-08.svg'
 
 
 
-export { default as Profile } from './images/profile.jpg'
+export { default as ProfileImg } from './images/profile.jpg'
 
 export { default as Massage1 } from './images/massage1.jpg'
 export { default as Massage2 } from './images/massage2.jpg'

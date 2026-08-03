@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Profile } from './../../assets/index.js' 
+import { ProfileImg } from './../../assets/index.js' 
 
 import './../../styles/home/profile.css';
 
@@ -12,7 +12,7 @@ const PresentationCard = ({}) => {
       <div className="about-container">
         <div className="about-image-wrapper">
           <img 
-            src={Profile} 
+            src={ProfileImg} 
             alt="Professional Massage Therapist" 
             className="about-image"
           />

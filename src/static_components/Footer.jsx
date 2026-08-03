@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { LogoBlancLletres } from '../assets';
 import './../styles/footer.css'
 
 const Footer = () => {
@@ -10,13 +11,13 @@ const Footer = () => {
       <div className="footer-container">
 
         {/* Column 1: Logo & Social */}
-        <div className="footer-col brand-col">
+        <div className="footer-col justify-center">
           <img 
-            src="/logo.png" 
+            src={LogoBlancLletres} 
             alt={t('footer.logo.alt')} 
             className="footer-logo"
           />
-          <p className="footer-tagline">{t('footer.tagline')}</p>
+          {/* <p className="footer-tagline">{t('footer.tagline')}</p> */}
           <div className="social-links">
             <a 
               href="https://instagram.com/yourpractice" 
@@ -78,6 +79,7 @@ const Footer = () => {
       </div>
       
 
+      {/* bottom  */}
       <div className="footer-bottom">
         <div className="footer-bottom-container">
           <p className="copyright">
