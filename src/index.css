@@ -14,7 +14,8 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-text-size-adjust: 100%; */
+  /* -moz-osx-font-smoothing: grayscale; */
 }
 
 a {
@@ -61,7 +62,7 @@ button:hover {
 
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto;
 }
 
 @media (prefers-color-scheme: light) {
@@ -96,7 +97,6 @@ button:focus-visible {
   justify-content: center; /* Center horizontally */
   align-items: center;     /* Align items in the middle */
   gap: 15px;               /* Add space between icons */
-  /* margin-top: 20px;        Optional: Add space from the top */
 }
 
 .linked-image a {
@@ -207,18 +207,3 @@ rgb(31 41 55) = gray-800
   /* background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.6), transparent); */
   color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

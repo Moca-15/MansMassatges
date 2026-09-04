@@ -24,14 +24,14 @@ export default function Header() {
       <nav className="flex flex-1 justify-center">
         <div className="nav-links-container">
           <Link 
-            to="/about" 
-            className={`nav-link ${isActive('/about') ? 'nav-link-active' : ''}`}
+            to="/sobremi" 
+            className={`nav-link ${isActive('/sobremi') ? 'nav-link-active' : ''}`}
           >
             {t('header.about')}
           </Link>
           <Link 
-            to="/services" 
-            className={`nav-link ${isActive('/services') ? 'nav-link-active' : ''}`}
+            to="/massatges" 
+            className={`nav-link ${isActive('/massatges') ? 'nav-link-active' : ''}`}
           >
             {t('header.services')}
           </Link>

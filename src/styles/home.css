@@ -1,3 +1,35 @@
+// Landing
+.landing-section {
+  position: relative;
+}
+
+.landing-container {
+  position: relative;
+  height: 751.2px; /* 100% del viewport però així no es trenca quan canvia el viewport*/
+}
+
+.background-container {
+  position: fixed;
+  inset: 0px;
+  background-size: cover;
+  /* background-position-y: -900px; */
+  z-index: -10;
+  background-attachment: fixed;
+}
+
+.background-overlay {
+  background-color: rgb(0,0,0, 0.5);
+}
+
+.landing-divider {
+  height: 50px;
+  position: relative;
+  background-color: #000000
+}
+
+
+
+// Sobre Mi
 .about-section {
   background-color: #ffffff;
   margin: 0 auto;
