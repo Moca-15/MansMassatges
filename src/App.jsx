@@ -7,7 +7,7 @@ import './i18n'; // Comprovar que la conf està inicialitzada!!!
 
 // Importar pags
 import { UC } from './pages'
-import { Home, About, Test } from './pages'
+import { Home, SobreMi, Massatges, Test } from './pages'
 
 // Importar components
 import { Header, Footer } from './static_components/index.js'
@@ -28,9 +28,9 @@ function App() {
         {/* Main Content (només rutes de pags, les de components són per test/debug*/}
         <main className="flex-grow">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<UC />} />
+            <Route path="/sobremi" element={<SobreMi />} />
+            <Route path="/massatges" element={<Massatges />} />
             <Route path="/test" element={<Test />} />
 
 
