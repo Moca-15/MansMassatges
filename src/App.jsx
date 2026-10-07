@@ -30,9 +30,9 @@ function App() {
           <Routes>
             <Route path="/" element={<UC />} />
             {/* <Route path="/" element={<Home />} /> */}
-            <Route path="/sobremi" element={<SobreMi />} />
-            <Route path="/massatges" element={<Massatges />} />
-            <Route path="/test" element={<Test />} />
+            {/* <Route path="/sobremi" element={<SobreMi />} /> */}
+            {/* <Route path="/massatges" element={<Massatges />} /> */}
+            {/* <Route path="/test" element={<Test />} /> */}
           </Routes>
         </main>
 
