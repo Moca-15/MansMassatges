@@ -61,3 +61,39 @@
   margin: 0;
   line-height: 1.5;
 }
+
+
+.announcement {
+  margin: 0 auto 28px;
+  padding: 22px 24px 24px;
+  max-width: 520px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  background: linear-gradient(180deg, rgba(176,141,87,0.04), rgba(176,141,87,0.02));
+}
+
+
+.announcement-label {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #b08d57;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+.announcement-date {
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #333;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.announcement-sub {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+  letter-spacing: 0.02em;
+}

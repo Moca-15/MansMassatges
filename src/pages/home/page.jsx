@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import './../../styles/home.css'
 
 
-import { HomeBackground, LogoGris } from '../../assets/index.js';
-import { LogoGrisFull } from '../../assets/index.js'
+import { HomeBackground, LogoGrisFull } from '../../assets/index.js';
+import { LogoBlancLletres, LogoGrisLletres } from '../../assets/index.js'
 
 import { Massage1 } from '../../assets/index.js';
 import { Massage2 } from '../../assets/index.js';
@@ -72,31 +72,38 @@ export default function Home() {
     
     <section> {/* wrapper de tot */}
       {/* background wt logo */}
-      <section className='landing-section'>
+      <section className="landing-section">
         <div className="landing-container">
           <div className="background-container"
-            style={{ 
+            style={{
               backgroundImage: `url(${HomeBackground})`,
               // scroll -0.5px perquè el fons baixi en scroll però amb delay
               transform: 'translateY(calc(var(--scroll) * (-0.15px)))',
             }}
           ></div>
-          <div className="background-container background-overlay"></div> {/* opacitat negra pel fons */}
+          <div className="background-container background-overlay"></div>
 
-          {/* items-center -> vertical, justify-center -> horitzontal */}
-          <div className="relative flex items-center justify-center top-32">
-            <img src={LogoGrisFull} 
+          {/* items-center -> vertical, justify-center -> horitzontal || flex-col apila verticalment || top-32 pel rodó*/}
+          <div className="relative flex flex-col items-center justify-center top-44">
+            {/* <img src={LogoGrisFull} 
               alt="Mans Massatges - Agnès Casablancas" 
               className="shadow-2xl"
               style={{borderRadius:'50%'}}
               width={350}
               height={350}
+            /> */}
+            <img
+              src={LogoBlancLletres}
+              alt="Mans Massatges"
+              width={450}
+              height={450}
             />
+
+            {/* Ara pots afegir text aquí i quedarà sota la imatge */}
+            <p className="text-white text-2xl mt-10">Massatges a domicili a la Cerdanya</p>
           </div>
         </div>
-        
       </section>
-
 
 
       <Slideshow/>

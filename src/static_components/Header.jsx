@@ -47,12 +47,6 @@ export default function Header() {
           >
             {t('header.contact')}
           </Link>
-          <Link 
-            to="/information" 
-            className={`nav-link ${isActive('/information') ? 'nav-link-active' : ''}`}
-          >
-            {t('header.bookings')}
-          </Link>
         </div>
       </nav>
  
