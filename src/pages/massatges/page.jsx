@@ -143,7 +143,7 @@ Mirjançant maniobres profundes i especifiques, es treballen les àrees amb més
 
       {/* Service 2 - Dark Background */}
       <section className="service-section service-dark">
-        <div className="service-wrapper service-wrapper-reverse">
+        <div className="service-wrapper ">
           <div className="service-content">
             <span className="service-tag service-tag-alt">Esportiu</span>
             <h2>Massatge Fita</h2>
@@ -299,8 +299,8 @@ La llum adecuada, els olis més escollits, les milors essènies i una música en
       </section>
 
       {/* Service 4 - Dark Background */}
-      <section className="service-section service-light">
-        <div className="service-wrapper">
+      <section className="service-section service-dark">
+        <div className="service-wrapper  service-wrapper-reverse">
           <div className="service-image-container">
             <div className="service-image-frame">
               <img src={services[2].image} alt="Prenatal massage treatment" className="service-image" />
