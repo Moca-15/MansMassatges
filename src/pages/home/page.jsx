@@ -106,7 +106,7 @@ export default function Home() {
       </section>
 
 
-      <Slideshow/>
+      {/* <Slideshow/> */}
 
       {/* SOBRE MI: TODO: afegir botó */}
       <section className="about-section">

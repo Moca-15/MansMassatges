@@ -54,74 +54,166 @@ export default function App() {
 
 
 
+// const AboutPage = () => {
+//   return (
+//     <div className="about-page">
+//       {/* Hero Section */}
+//       <div className="about-hero">
+//         <div className="about-hero-overlay" />
+//         <div className="about-hero-content">
+//           <h1 className="about-hero-title">Meet Your Therapist</h1>
+//           <div className="about-hero-divider" />
+//         </div>
+//       </div>
+
+//       {/* Main Content */}
+//       <div className="about-main">
+//         <div className="about-content-wrapper">
+//           {/* Image Section */}
+//           <div className="about-image-section">
+//             <div className="about-image-frame">
+//               <img
+//                 src={ProfileImg}
+//                 alt="Massage therapist in a calm, professional setting"
+//                 className="about-image"
+//               />
+//             </div>
+//             <div className="about-image-accent" />
+//           </div>
+
+//           {/* Text Section */}
+//           <div className="about-text-section">
+//             <h2 className="about-section-tag">About</h2>
+//             <div className="about-text-divider" />
+
+//             <div className="about-credentials">
+//               <div className="about-credential-item">
+//                 <span className="about-credential-dot" />
+//                 <p className="about-credential-text"></p>
+//               </div>
+//               <div className="about-credential-item">
+//                 <span className="about-credential-dot" />
+//                 <p className="about-credential-text"></p>
+//               </div>
+//               <div className="about-credential-item">
+//                 <span className="about-credential-dot" />
+//                 <p className="about-credential-text"></p>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Philosophy Cards */}
+//         <div className="about-philosophy-grid">
+//           <div className="about-philosophy-card">
+//             <h3 className="about-philosophy-title">My Philosophy</h3>
+//             <div className="about-philosophy-divider" />
+//             <div className="about-philosophy-content">
+//               {/* Placeholder for philosophy text */}
+//             </div>
+//           </div>
+
+//           <div className="about-philosophy-card">
+//             <h3 className="about-philosophy-title">My Approach</h3>
+//             <div className="about-philosophy-divider" />
+//             <div className="about-philosophy-content">
+//               {/* Placeholder for approach text */}
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default AboutPage;
+
+
+
+// AboutPage.jsx
+
+
+
 const AboutPage = () => {
   return (
     <div className="about-page">
-      {/* Hero Section */}
-      <div className="about-hero">
-        <div className="about-hero-overlay" />
-        <div className="about-hero-content">
-          <h1 className="about-hero-title">Meet Your Therapist</h1>
-          <div className="about-hero-divider" />
-        </div>
-      </div>
+      {/* Hero */}
+      {/* <section className="about-hero">
+        <h1>About Me</h1>
+        <div className="about-hero-divider" />
+        <p className="about-hero-subtitle">
+          A space where calm, care, and expert hands meet.
+        </p>
+      </section> */}
 
-      {/* Main Content */}
-      <div className="about-main">
-        <div className="about-content-wrapper">
-          {/* Image Section */}
-          <div className="about-image-section">
+      {/* Presentation Section */}
+      <section className="about-section">
+        <div className="about-wrapper">
+          {/* Image */}
+          <div className="about-image-container">
             <div className="about-image-frame">
               <img
                 src={ProfileImg}
-                alt="Massage therapist in a calm, professional setting"
+                alt="Imatge"
                 className="about-image"
               />
             </div>
             <div className="about-image-accent" />
           </div>
 
-          {/* Text Section */}
-          <div className="about-text-section">
-            <h2 className="about-section-tag">About</h2>
-            <div className="about-text-divider" />
+          {/* Content */}
+          <div className="about-content">
+            <span className="about-tag">Qui sóc</span>
+            <div className="about-divider" />
 
-            <div className="about-credentials">
-              <div className="about-credential-item">
-                <span className="about-credential-dot" />
-                <p className="about-credential-text"></p>
-              </div>
-              <div className="about-credential-item">
-                <span className="about-credential-dot" />
-                <p className="about-credential-text"></p>
-              </div>
-              <div className="about-credential-item">
-                <span className="about-credential-dot" />
-                <p className="about-credential-text"></p>
-              </div>
-            </div>
+            <p className="about-description">
+              Soc l'Agnès. Vaig néixer a Barcelona però fa molts anys que el Pirineu és casa meva. He viscut al Pallars i a l'Aran, actualment estic establerta a la Cerdanya.
+            </p>
+
+            <p className="about-description">
+              Fa deu anys que em dedico professionalment als massatges i a l'ensenyament del ioga (Hatha, Vinyasa, Yin, Prenatal, Oncològic). Aquesta trajectòria m'ha permès desenvolupar una manera de treballar atenta, propera i adaptada a cada persona.
+              Em vaig formar inicialment en tècniques de quiromassatge i massatge esportiu. Amb els anys, he continuat ampliant els meus coneixements amb tècniques de spa, massatges orientals i formació en kinesiologia. La formació contínua i l'experiència són la base de la meva feina. 
+
+            </p>
+
+            <p className="about-description">
+              Treballar a domicili em permet personalitzar els massatges i adaptar-los a les necessitats de cada persona, tot això en un entorn familiar i còmode. Crear els meus propis protocols, escollir tots els elements que fan que cada massatge es converteixi en una experiència de 5 estrelles i, cuidar fins l'últim detall. 
+            </p>
+
+            <p className="about-description">
+              En aquest camí, Jordi Casalta i Rafa Cortés han estat dos referents importants. D'ells he après coneixements tècnics i una manera d'entendre l'ofici basada en la humilitat, la sensibilitat i el respecte.
+            </p>
+
+            <p className="about-description">
+              La meva manera de treballar uneix experiència, tècnica i tracte humà: escoltar, adaptar i cuidar.
+            </p>
+
+
+
+            <a href="/massatges" className="about-cta">Descobreix els massatges</a>
           </div>
         </div>
+      </section>
 
-        {/* Philosophy Cards */}
-        <div className="about-philosophy-grid">
-          <div className="about-philosophy-card">
-            <h3 className="about-philosophy-title">My Philosophy</h3>
-            <div className="about-philosophy-divider" />
-            <div className="about-philosophy-content">
-              {/* Placeholder for philosophy text */}
-            </div>
-          </div>
+      {/* Values Strip */}
+      <section className="about-values-strip">
+        <ul className="values-strip-list">
+          <li>Respecte</li>
+          <li>Humilitat</li>
+          <li>Honestedat</li>
+          <li>Autenticitat</li>
+          <li>Calma</li>
+        </ul>
+      </section>
 
-          <div className="about-philosophy-card">
-            <h3 className="about-philosophy-title">My Approach</h3>
-            <div className="about-philosophy-divider" />
-            <div className="about-philosophy-content">
-              {/* Placeholder for approach text */}
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+      {/* CTA */}
+      <section className="about-cta-banner">
+        <h2>Vols reservar la teva sessió?</h2>
+        <p>Estaré encantada d'acompanyar-te en aquest camí cap al benestar.</p>
+        <a href="/contact" className="banner-cta">Contacta amb mi</a>
+      </section>
     </div>
   );
 };

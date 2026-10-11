@@ -1,155 +1,63 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-.background {
-  background-color: #EEE9E3; 
-  min-height: 100vh; 
-  width: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: Arial, sans-serif;
-}
-
-.app {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-}
-
-.content {
-  /* text-align: center; */
-  max-width: 100%;
-  display: flex;
-  justify-content: space-around;
-  /* padding: 20px; */
-}
-
-.image-wrapper {
-  width: 500px;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 12px;
-  float: left;
-}
-
-.text-wrapper {
-  width: 700px;
-  height: 450px;
-  float: right;
-}
-
-.main-image {
-  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); */
-  transition: transform 0.3s ease;
-}
-
-/* .main-image:hover {
-  transform: scale(1.02);
-} */
-
-.text-snippet {
-  color: #484D51;
-  margin-top: 24px;
-  margin-left: 24px;
-  font-size: 1.2rem;
-  /* color: white; */
-  font-weight: 500;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
-  letter-spacing: 0.5px;
-}
-
-.enumeration {
-  list-style-type: disc;
-}
-
-.list-item {
-  color: #484D51;
-  font-size: 1.2rem;
-  /* color: white; */
-  font-weight: 500;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
-  letter-spacing: 0.5px;
-}
-
-
-/*----------------------------------------------------------------------------------------------------------------------------------*/
-
-
-/* ===== About Page Container ===== */
+/* AboutPage.css */
 .about-page {
-  background-color: #efe9e4;
-  min-height: 100vh;
   font-family: 'Cormorant Garamond', 'Georgia', serif;
+  color: #474d51;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
 }
 
-/* ===== Hero Section ===== */
-.about-hero {
-  position: relative;
+/* Hero */
+/* .about-hero {
   background-color: #474d51;
-  padding: 100px 40px 80px;
+  padding: 80px 40px;
   text-align: center;
-  overflow: hidden;
 }
 
-.about-hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(135deg, #474d51 0%, #6c8b7e 100%);
-  opacity: 0.95;
-}
-
-.about-hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.about-hero-title {
+.about-hero h1 {
   color: #efe9e4;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 300;
   letter-spacing: 2px;
   margin: 0;
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
 }
 
 .about-hero-divider {
   width: 80px;
   height: 2px;
   background-color: #d97a5c;
-  margin: 24px auto 0;
+  margin: 20px auto;
 }
 
-/* ===== Main Content ===== */
-.about-main {
-  max-width: 1100px;
+.about-hero-subtitle {
+  color: #c6a77a;
+  font-size: 18px;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 80px 40px;
+  line-height: 1.6;
+} */
+
+/* Presentation Section */
+.about-section {
+  background-color: #efe9e4;
+  padding: 10px 100px;
 }
 
-/* ===== Content Wrapper (Image + Text Side by Side) ===== */
-.about-content-wrapper {
+.about-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
   display: flex;
-  gap: 80px;
+  flex-direction: row;
+  gap: 60px;
   align-items: center;
-  margin-bottom: 100px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
-/* ===== Image Section ===== */
-.about-image-section {
-  flex: 1 1 400px;
+/* Image */
+.about-image-container {
+  flex: 0 0 33%;
+  max-width: 33%;
   position: relative;
 }
 
@@ -166,7 +74,7 @@
   height: auto;
   display: block;
   object-fit: cover;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 5;
 }
 
 .about-image-accent {
@@ -180,113 +88,189 @@
   z-index: 1;
 }
 
-/* ===== Text Section ===== */
-.about-text-section {
-  flex: 1 1 400px;
+/* Content */
+.about-content {
+  flex: 1 1 67%;
+  max-width: 67%;
+  /* text-align: left; */
 }
 
-.about-section-tag {
+.about-tag {
+  display: inline-block;
   color: #d97a5c;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  margin: 0 0 16px 0;
+  margin-bottom: 12px;
   font-family: 'Montserrat', 'Helvetica', sans-serif;
 }
 
-.about-text-divider {
+.about-content h2 {
+  color: #474d51;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 16px 0;
+}
+
+.about-divider {
   width: 50px;
   height: 2px;
   background-color: #6c8b7e;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
-/* ===== Credentials List ===== */
-.about-credentials {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.about-credential-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.about-credential-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #c6a77a;
-  margin-top: 6px;
-  flex-shrink: 0;
-}
-
-.about-credential-text {
-  color: #474d51;
+.about-description {
   font-size: 17px;
-  line-height: 1.7;
-  margin: 0;
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
-}
-
-/* ===== Philosophy Cards Grid ===== */
-.about-philosophy-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-}
-
-.about-philosophy-card {
-  background-color: #ffffff;
-  padding: 48px 40px;
-  border-radius: 4px;
-  box-shadow: 0 10px 40px rgba(71, 77, 81, 0.06);
-  border-left: 3px solid #6c8b7e;
-}
-
-.about-philosophy-title {
+  line-height: 1.8;
   color: #474d51;
-  font-size: 24px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin: 0 0 16px 0;
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  margin: 0 0 18px 0;
 }
 
-.about-philosophy-divider {
-  width: 40px;
-  height: 2px;
-  background-color: #d97a5c;
-  margin-bottom: 24px;
+/* Values */
+.about-values {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+
+  gap: 10px;
+}
+
+.about-values li {
+  /* display: flex;
+  align-items: flex-start; */
+  gap: 10px;
+  font-size: 16px;
+  color: #474d51;
+  line-height: 1.5;
+}
+
+.value-icon {
+  color: #6c8b7e;
+  font-weight: bold;
+  /* flex-shrink: 0; */
+  margin-top: 1px;
+}
+
+/* CTA Button */
+.about-cta {
+  display: inline-block;
+  background-color: #6c8b7e;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 4px;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.about-cta:hover {
+  background-color: #5a7a6c;
+}
+
+/* Philosophy / Quote */
+.about-philosophy {
+  background-color: #474d51;
+  padding: 80px 40px;
+  text-align: center;
 }
 
 .about-philosophy-content {
-  color: #474d51;
-  font-size: 16px;
-  line-height: 1.8;
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
-/* ===== Responsive Adjustments ===== */
+.about-philosophy-divider {
+  width: 50px;
+  height: 2px;
+  background-color: #d97a5c;
+  margin: 0 auto 28px;
+}
+
+.about-quote {
+  color: #efe9e4;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.7;
+  margin: 0 0 20px 0;
+}
+
+.about-quote-author {
+  color: #c6a77a;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* CTA Banner */
+.about-cta-banner {
+  background-color: #6c8b7e;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.about-cta-banner h2 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 0 12px 0;
+}
+
+.about-cta-banner p {
+  color: #efe9e4;
+  font-size: 17px;
+  margin: 0 0 24px 0;
+}
+
+.banner-cta {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #6c8b7e;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 4px;
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.banner-cta:hover {
+  background-color: #efe9e4;
+  color: #474d51;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .about-hero {
-    padding: 60px 24px 50px;
+    padding: 60px 24px;
   }
 
-  .about-hero-title {
+  .about-hero h1 {
     font-size: 36px;
   }
 
-  .about-main {
+  .about-section {
     padding: 50px 24px;
   }
 
-  .about-content-wrapper {
-    gap: 50px;
-    margin-bottom: 60px;
+  .about-wrapper {
+    /* gap: 40px; */
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
   }
 
   .about-image-accent {
@@ -294,11 +278,93 @@
     right: -10px;
   }
 
-  .about-philosophy-grid {
-    grid-template-columns: 1fr;
+  .about-quote {
+    font-size: 20px;
   }
 
-  .about-philosophy-card {
-    padding: 36px 28px;
+  .about-cta-banner h2 {
+    font-size: 26px;
+  }
+
+  .about-image-container,
+  .about-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .about-image {
+    aspect-ratio: 4 / 5;
+  }
+
+}
+
+
+/* Values Strip */
+.about-values-strip {
+  background-color: #efe9e4;
+  padding: 40px 40px;
+  border-top: 1px solid rgba(108, 139, 126, 0.25);
+  border-bottom: 1px solid rgba(108, 139, 126, 0.25);
+}
+
+.values-strip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.values-strip-list li {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #474d51;
+  white-space: nowrap;
+}
+
+.values-strip-list li:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #d97a5c;
+  margin: 0 22px;
+  vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-values-strip {
+    padding: 30px 24px;
+  }
+
+  .values-strip-list li {
+    font-size: 18px;
+  }
+
+  .values-strip-list li:not(:last-child)::after {
+    margin: 0 14px;
+    width: 4px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .values-strip-list li {
+    font-size: 16px;
+  }
+
+  .values-strip-list li:not(:last-child)::after {
+    margin: 0 10px;
   }
 }

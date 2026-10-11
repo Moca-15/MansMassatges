@@ -1,8 +1,72 @@
-/* ServicesPage.css */
+/* ServicesPage.css
 .services-page {
   font-family: 'Cormorant Garamond', 'Georgia', serif;
   color: #474d51;
 }
+*/
+
+/* Section sub-titles ("Beneficis", "Ideal per a") */
+.service-list-title {
+  font-family: 'Montserrat', 'Helvetica', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #6c8b7e;
+  margin: 0 0 12px 0;
+}
+
+/* Ideal-for list */
+.service-ideal {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-ideal li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  color: #474d51;
+  line-height: 1.5;
+}
+
+.ideal-icon {
+  color: #d97a5c;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: -2px;      /* aligns the bullet nicely with text */
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Dark variant (service-dark section) */
+.service-dark .service-list-title {
+  color: #c6a77a;
+}
+
+.service-dark .service-ideal li {
+  color: #efe9e4;
+}
+
+.service-dark .ideal-icon {
+  color: #c6a77a;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Hero */
 .services-hero {
@@ -343,3 +407,5 @@
     font-size: 26px;
   }
 }
+
+
