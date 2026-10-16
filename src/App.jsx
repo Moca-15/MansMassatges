@@ -23,16 +23,16 @@ function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         {/* Header */}
-        <Header />
+        {/* <Header /> */}
 
         {/* Main Content (només rutes de pags, les de components són per test/debug*/}
         <main className="flex-grow">
           <Routes>
-            {/* <Route path="/" element={<UC />} /> */}
-            <Route path="/" element={<Home />} />
-            <Route path="/sobremi" element={<SobreMi />} />
-            <Route path="/massatges" element={<Massatges />} />
-            <Route path="/test" element={<Test />} />
+            <Route path="/" element={<UC />} />
+            {/* <Route path="/" element={<Home />} /> */}
+            {/* <Route path="/sobremi" element={<SobreMi />} /> */}
+            {/* <Route path="/massatges" element={<Massatges />} /> */}
+            {/* <Route path="/test" element={<Test />} /> */}
           </Routes>
         </main>
 
