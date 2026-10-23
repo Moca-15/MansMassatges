@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mansquiromassatge.com/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mansquiromassatge.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mansquiromassatge.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mansquiromassatge.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://mansquiromassatge.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mansquiromassatge.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mansquiromassatge.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mansquiromassatge.com/fr/"/>
+  </url>
+  <url>
+    <loc>https://mansquiromassatge.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://mansquiromassatge.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mansquiromassatge.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mansquiromassatge.com/fr/"/>
+  </url>
+</urlset>
